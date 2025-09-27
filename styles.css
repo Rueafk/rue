@@ -697,6 +697,7 @@ body {
 @media (max-width: 1024px) {
     .pixel-container {
         margin: 1.5rem;
+        border-width: 3px;
     }
     
     .pixel-header-frame {
@@ -706,54 +707,62 @@ body {
     .pixel-contact-panel {
         min-width: 280px;
     }
-}
-
-@media (max-width: 768px) {
-    .pixel-container {
-        margin: 1rem;
-        border-width: 3px;
-    }
-    
-    .pixel-header {
-        padding: 30px;
-    }
-    
-    .pixel-header-frame {
-        flex-direction: column;
-        gap: 25px;
-    }
-    
-    .pixel-profile-section {
-        flex-direction: column;
-        text-align: center;
-        gap: 25px;
-    }
-    
-    .pixel-avatar {
-        width: 100px;
-        height: 100px;
-    }
     
     .pixel-name {
-        font-size: 24px;
+        font-size: 28px;
     }
     
     .pixel-title {
         font-size: 12px;
     }
+}
+
+@media (max-width: 768px) {
+    .pixel-container {
+        margin: 0.75rem;
+        border-width: 2px;
+    }
     
-    .pixel-section {
+    .pixel-header {
         padding: 25px;
     }
     
+    .pixel-header-frame {
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .pixel-profile-section {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+    
+    .pixel-avatar {
+        width: 90px;
+        height: 90px;
+    }
+    
+    .pixel-name {
+        font-size: 22px;
+    }
+    
+    .pixel-title {
+        font-size: 11px;
+    }
+    
+    .pixel-section {
+        padding: 20px;
+    }
+    
     .pixel-section-frame {
-        padding: 15px;
+        padding: 12px;
     }
     
     .pixel-job-header,
     .pixel-project-header {
         flex-direction: column;
-        gap: 10px;
+        gap: 8px;
         align-items: flex-start;
     }
     
@@ -763,77 +772,38 @@ body {
     
     .pixel-skills-grid {
         grid-template-columns: 1fr;
-        gap: 15px;
+        gap: 12px;
     }
     
     .pixel-contact-panel {
         min-width: auto;
         width: 100%;
-    }
-    
-    .pixel-contact-grid {
-        gap: 6px;
-    }
-    
-    .pixel-contact-item {
-        font-size: 11px;
-        padding: 6px;
-    }
-    
-    .pixel-summary {
-        font-size: 11px;
-    }
-    
-    .pixel-achievement {
-        font-size: 11px;
-    }
-    
-    .pixel-project-description {
-        font-size: 10px;
-    }
-    
-    .pixel-community-description {
-        font-size: 10px;
-    }
-}
-
-@media (max-width: 480px) {
-    .pixel-container {
-        margin: 0.5rem;
-        border-width: 2px;
-    }
-    
-    .pixel-header {
-        padding: 20px;
-    }
-    
-    .pixel-header-frame {
-        gap: 20px;
-    }
-    
-    .pixel-profile-section {
-        gap: 20px;
-    }
-    
-    .pixel-avatar {
-        width: 80px;
-        height: 80px;
-    }
-    
-    .pixel-name {
-        font-size: 18px;
-    }
-    
-    .pixel-title {
-        font-size: 10px;
-    }
-    
-    .pixel-section {
         padding: 15px;
     }
     
-    .pixel-section-frame {
-        padding: 12px;
+    .pixel-contact-grid {
+        gap: 5px;
+    }
+    
+    .pixel-contact-item {
+        font-size: 10px;
+        padding: 5px;
+    }
+    
+    .pixel-summary {
+        font-size: 10px;
+    }
+    
+    .pixel-achievement {
+        font-size: 10px;
+    }
+    
+    .pixel-project-description {
+        font-size: 9px;
+    }
+    
+    .pixel-community-description {
+        font-size: 9px;
     }
     
     .pixel-section-title {
@@ -846,72 +816,29 @@ body {
     .pixel-community-title {
         font-size: 12px;
     }
-    
-    .pixel-company,
-    .pixel-certification-issuer {
-        font-size: 10px;
-    }
-    
-    .pixel-date,
-    .pixel-project-tech {
-        font-size: 9px;
-    }
-    
-    .pixel-skill-tags {
-        gap: 4px;
-    }
-    
-    .pixel-skill-tag {
-        padding: 3px 6px;
-        font-size: 8px;
-    }
-    
-    .pixel-skill-title {
-        font-size: 11px;
-    }
-    
-    .pixel-summary {
-        font-size: 10px;
-    }
-    
-    .pixel-achievement {
-        font-size: 10px;
-    }
-    
-    .pixel-project-description,
-    .pixel-community-description {
-        font-size: 9px;
-    }
-    
-    .pixel-contact-item {
-        font-size: 10px;
-        padding: 5px;
-    }
-    
-    .pixel-panel-title {
-        font-size: 12px;
-    }
-    
-    .pixel-stat {
-        font-size: 10px;
-    }
 }
 
-@media (max-width: 360px) {
+@media (max-width: 480px) {
     .pixel-container {
         margin: 0.25rem;
+        border-width: 1px;
     }
     
     .pixel-header {
         padding: 15px;
     }
     
-    .pixel-section {
-        padding: 12px;
+    .pixel-header-frame {
+        gap: 15px;
     }
     
-    .pixel-section-frame {
-        padding: 10px;
+    .pixel-profile-section {
+        gap: 15px;
+    }
+    
+    .pixel-avatar {
+        width: 70px;
+        height: 70px;
     }
     
     .pixel-name {
@@ -922,19 +849,246 @@ body {
         font-size: 9px;
     }
     
-    .pixel-avatar {
-        width: 70px;
-        height: 70px;
+    .pixel-section {
+        padding: 12px;
+    }
+    
+    .pixel-section-frame {
+        padding: 8px;
+    }
+    
+    .pixel-section-title {
+        font-size: 12px;
+    }
+    
+    .pixel-job-title,
+    .pixel-project-title,
+    .pixel-certification-name,
+    .pixel-community-title {
+        font-size: 10px;
+    }
+    
+    .pixel-company,
+    .pixel-certification-issuer {
+        font-size: 8px;
+    }
+    
+    .pixel-date,
+    .pixel-project-tech {
+        font-size: 7px;
+    }
+    
+    .pixel-skill-tags {
+        gap: 3px;
     }
     
     .pixel-skill-tag {
         padding: 2px 4px;
+        font-size: 6px;
+    }
+    
+    .pixel-skill-title {
+        font-size: 9px;
+    }
+    
+    .pixel-summary {
+        font-size: 8px;
+        line-height: 1.4;
+    }
+    
+    .pixel-achievement {
+        font-size: 8px;
+    }
+    
+    .pixel-project-description,
+    .pixel-community-description {
         font-size: 7px;
     }
     
     .pixel-contact-item {
-        font-size: 9px;
+        font-size: 8px;
+        padding: 3px;
+    }
+    
+    .pixel-panel-title {
+        font-size: 10px;
+    }
+    
+    .pixel-stat {
+        font-size: 8px;
+    }
+    
+    .pixel-contact-panel {
+        padding: 10px;
+    }
+    
+    .pixel-job-header,
+    .pixel-project-header {
+        gap: 5px;
+    }
+    
+    .pixel-skills-grid {
+        gap: 8px;
+    }
+}
+
+@media (max-width: 360px) {
+    .pixel-container {
+        margin: 0.1rem;
+        border-width: 1px;
+    }
+    
+    .pixel-header {
+        padding: 10px;
+    }
+    
+    .pixel-section {
+        padding: 8px;
+    }
+    
+    .pixel-section-frame {
+        padding: 6px;
+    }
+    
+    .pixel-name {
+        font-size: 14px;
+    }
+    
+    .pixel-title {
+        font-size: 8px;
+    }
+    
+    .pixel-avatar {
+        width: 60px;
+        height: 60px;
+    }
+    
+    .pixel-skill-tag {
+        padding: 1px 3px;
+        font-size: 5px;
+    }
+    
+    .pixel-contact-item {
+        font-size: 7px;
+        padding: 2px;
+    }
+    
+    .pixel-section-title {
+        font-size: 10px;
+    }
+    
+    .pixel-job-title,
+    .pixel-project-title,
+    .pixel-certification-name,
+    .pixel-community-title {
+        font-size: 8px;
+    }
+    
+    .pixel-summary {
+        font-size: 7px;
+    }
+    
+    .pixel-achievement {
+        font-size: 7px;
+    }
+    
+    .pixel-project-description,
+    .pixel-community-description {
+        font-size: 6px;
+    }
+    
+    .pixel-contact-panel {
+        padding: 8px;
+    }
+    
+    .pixel-panel-title {
+        font-size: 8px;
+    }
+}
+
+/* Extra small phones */
+@media (max-width: 320px) {
+    .pixel-container {
+        margin: 0.05rem;
+    }
+    
+    .pixel-header {
+        padding: 8px;
+    }
+    
+    .pixel-section {
+        padding: 6px;
+    }
+    
+    .pixel-section-frame {
         padding: 4px;
+    }
+    
+    .pixel-name {
+        font-size: 12px;
+    }
+    
+    .pixel-title {
+        font-size: 7px;
+    }
+    
+    .pixel-avatar {
+        width: 50px;
+        height: 50px;
+    }
+    
+    .pixel-skill-tag {
+        padding: 1px 2px;
+        font-size: 4px;
+    }
+    
+    .pixel-contact-item {
+        font-size: 6px;
+        padding: 1px;
+    }
+    
+    .pixel-section-title {
+        font-size: 8px;
+    }
+    
+    .pixel-summary {
+        font-size: 6px;
+    }
+    
+    .pixel-achievement {
+        font-size: 6px;
+    }
+    
+    .pixel-project-description,
+    .pixel-community-description {
+        font-size: 5px;
+    }
+}
+
+/* Landscape phone optimization */
+@media (max-width: 768px) and (orientation: landscape) {
+    .pixel-header-frame {
+        flex-direction: row;
+        gap: 15px;
+    }
+    
+    .pixel-profile-section {
+        flex-direction: row;
+        text-align: left;
+        gap: 15px;
+    }
+    
+    .pixel-avatar {
+        width: 60px;
+        height: 60px;
+    }
+    
+    .pixel-name {
+        font-size: 16px;
+    }
+    
+    .pixel-title {
+        font-size: 9px;
     }
 }
 
