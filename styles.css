@@ -20,17 +20,17 @@
 
 .pixel-loading-content {
     text-align: center;
-    color: #00ff00;
+    color: #4ade80;
     font-family: 'Press Start 2P', monospace;
 }
 
 .pixel-loading-frame {
-    border: 4px solid #00ff00;
+    border: 4px solid #4ade80;
     background: #000000;
     padding: 40px;
     box-shadow: 
-        0 0 20px #00ff00,
-        inset 0 0 20px rgba(0, 255, 0, 0.1);
+        0 0 20px rgba(74, 222, 128, 0.3),
+        inset 0 0 20px rgba(74, 222, 128, 0.05);
     position: relative;
 }
 
@@ -41,9 +41,8 @@
     left: -2px;
     right: -2px;
     bottom: -2px;
-    background: linear-gradient(45deg, #00ff00, #00ffff, #ff00ff, #ffff00, #00ff00);
+    background: linear-gradient(45deg, #4ade80, #22d3ee, #a78bfa, #fbbf24, #4ade80);
     z-index: -1;
-    animation: pixelBorder 2s linear infinite;
 }
 
 .pixel-loading-penguin {
@@ -60,7 +59,7 @@
 }
 
 .pixel-loading-text {
-    font-size: 12px;
+    font-size: 14px;
     margin-bottom: 20px;
     text-shadow: 2px 2px 0px #000000;
 }
@@ -72,7 +71,7 @@
 .pixel-progress-bar {
     width: 200px;
     height: 20px;
-    border: 2px solid #00ff00;
+    border: 2px solid #4ade80;
     background: #000000;
     margin: 0 auto;
     position: relative;
@@ -81,10 +80,10 @@
 
 .pixel-progress-fill {
     height: 100%;
-    background: linear-gradient(90deg, #00ff00, #00ffff);
+    background: linear-gradient(90deg, #4ade80, #22d3ee);
     width: 0%;
     animation: pixelProgress 3.5s ease-in-out forwards;
-    box-shadow: 0 0 10px #00ff00;
+    box-shadow: 0 0 10px rgba(74, 222, 128, 0.5);
 }
 
 @keyframes pixelBorder {
@@ -112,8 +111,8 @@
 body {
     font-family: 'Press Start 2P', monospace;
     line-height: 1.6;
-    color: #00ff00;
-    background: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 50%, #16213e 100%);
+    color: #d97706;
+    background: #0a0a0a;
     min-height: 100vh;
     overflow-x: hidden;
     image-rendering: pixelated;
@@ -125,10 +124,10 @@ body {
     max-width: 1200px;
     margin: 2rem auto;
     background: #000000;
-    border: 4px solid #00ff00;
+    border: 4px solid #d97706;
     box-shadow: 
-        0 0 30px #00ff00,
-        inset 0 0 30px rgba(0, 255, 0, 0.1);
+        0 0 30px rgba(217, 119, 6, 0.2),
+        inset 0 0 30px rgba(217, 119, 6, 0.03);
     position: relative;
     image-rendering: pixelated;
 }
@@ -140,18 +139,17 @@ body {
     left: -2px;
     right: -2px;
     bottom: -2px;
-    background: linear-gradient(45deg, #00ff00, #00ffff, #ff00ff, #ffff00, #00ff00);
+    background: linear-gradient(45deg, #d97706, #0891b2, #dc2626, #ca8a04, #d97706);
     z-index: -1;
-    animation: pixelBorder 8s linear infinite;
 }
 
 /* Pixel Header Styles */
 .pixel-header {
     background: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 100%);
-    color: #00ff00;
+    color: #d97706;
     padding: 40px;
     position: relative;
-    border-bottom: 4px solid #00ff00;
+    border-bottom: 4px solid #d97706;
 }
 
 .pixel-header-frame {
@@ -178,12 +176,12 @@ body {
 .pixel-avatar {
     width: 120px;
     height: 120px;
-    border: 4px solid #00ff00;
+    border: 4px solid #d97706;
     background: #000000;
     position: relative;
     box-shadow: 
-        0 0 20px #00ff00,
-        inset 0 0 20px rgba(0, 255, 0, 0.1);
+        0 0 20px rgba(217, 119, 6, 0.2),
+        inset 0 0 20px rgba(217, 119, 6, 0.03);
     image-rendering: pixelated;
 }
 
@@ -203,26 +201,26 @@ body {
 }
 
 .pixel-name {
-    font-size: 24px;
+    font-size: 32px;
     font-weight: normal;
     margin-bottom: 15px;
-    color: #00ff00;
+    color: #d97706;
     text-shadow: 3px 3px 0px #000000;
     letter-spacing: 2px;
 }
 
 .pixel-title-frame {
-    border: 2px solid #00ff00;
+    border: 2px solid #d97706;
     background: #000000;
     padding: 10px;
     margin-bottom: 15px;
-    box-shadow: inset 0 0 10px rgba(0, 255, 0, 0.2);
+    box-shadow: inset 0 0 10px rgba(217, 119, 6, 0.05);
 }
 
 .pixel-title {
-    font-size: 10px;
+    font-size: 14px;
     font-weight: normal;
-    color: #00ffff;
+    color: #0891b2;
     text-shadow: 2px 2px 0px #000000;
     line-height: 1.4;
 }
@@ -234,28 +232,28 @@ body {
 }
 
 .pixel-stat {
-    font-size: 8px;
-    color: #ffff00;
+    font-size: 12px;
+    color: #ca8a04;
     text-shadow: 1px 1px 0px #000000;
 }
 
 .pixel-contact-panel {
     background: #000000;
-    border: 4px solid #00ff00;
+    border: 4px solid #d97706;
     padding: 20px;
     min-width: 300px;
     box-shadow: 
-        0 0 20px #00ff00,
-        inset 0 0 20px rgba(0, 255, 0, 0.1);
+        0 0 20px rgba(217, 119, 6, 0.2),
+        inset 0 0 20px rgba(217, 119, 6, 0.03);
 }
 
 .pixel-panel-title {
-    font-size: 10px;
-    color: #00ff00;
+    font-size: 14px;
+    color: #d97706;
     text-align: center;
     margin-bottom: 15px;
     text-shadow: 2px 2px 0px #000000;
-    border-bottom: 2px solid #00ff00;
+    border-bottom: 2px solid #d97706;
     padding-bottom: 10px;
 }
 
@@ -269,22 +267,23 @@ body {
     display: flex;
     align-items: center;
     gap: 10px;
-    font-size: 8px;
+    font-size: 12px;
     padding: 8px;
-    background: rgba(0, 255, 0, 0.1);
-    border: 1px solid #00ff00;
+    background: rgba(217, 119, 6, 0.05);
+    border: 1px solid #d97706;
     transition: all 0.3s ease;
     cursor: pointer;
 }
 
 .pixel-contact-item:hover {
-    background: rgba(0, 255, 0, 0.2);
-    box-shadow: 0 0 10px #00ff00;
+    background: rgba(217, 119, 6, 0.1);
+    box-shadow: 0 0 10px rgba(217, 119, 6, 0.3);
     transform: translateX(5px);
+    font-size: 16px;
 }
 
 .pixel-icon {
-    color: #00ffff;
+    color: #0891b2;
     font-weight: bold;
     min-width: 30px;
 }
@@ -292,7 +291,7 @@ body {
 /* Pixel Section Styles */
 .pixel-section {
     padding: 30px;
-    border-bottom: 2px solid #00ff00;
+    border-bottom: 2px solid #d97706;
     position: relative;
 }
 
@@ -302,9 +301,9 @@ body {
 
 .pixel-section-frame {
     background: #000000;
-    border: 2px solid #00ff00;
+    border: 2px solid #d97706;
     padding: 20px;
-    box-shadow: inset 0 0 20px rgba(0, 255, 0, 0.1);
+    box-shadow: inset 0 0 20px rgba(217, 119, 6, 0.03);
 }
 
 .pixel-section-header {
@@ -312,41 +311,47 @@ body {
 }
 
 .pixel-section-title {
-    font-size: 12px;
-    color: #00ff00;
+    font-size: 16px;
+    color: #d97706;
     text-shadow: 2px 2px 0px #000000;
-    border-bottom: 2px solid #00ff00;
+    border-bottom: 2px solid #d97706;
     padding-bottom: 10px;
     display: inline-block;
 }
 
 /* Pixel Summary Styles */
 .pixel-summary-box {
-    background: rgba(0, 255, 0, 0.05);
-    border: 1px solid #00ff00;
+    background: rgba(217, 119, 6, 0.03);
+    border: 1px solid #d97706;
     padding: 20px;
 }
 
 .pixel-summary {
-    font-size: 8px;
+    font-size: 12px;
     line-height: 1.8;
     color: #ffffff;
     text-shadow: 1px 1px 0px #000000;
+    transition: all 0.3s ease;
+}
+
+.pixel-summary-box:hover .pixel-summary {
+    font-size: 16px;
+    line-height: 2;
 }
 
 /* Pixel Experience Styles */
 .pixel-experience-item {
     margin-bottom: 25px;
     padding: 20px;
-    background: rgba(0, 255, 0, 0.05);
-    border: 2px solid #00ff00;
+    background: rgba(217, 119, 6, 0.03);
+    border: 2px solid #d97706;
     position: relative;
     transition: all 0.3s ease;
 }
 
 .pixel-experience-item:hover {
-    background: rgba(0, 255, 0, 0.1);
-    box-shadow: 0 0 20px #00ff00;
+    background: rgba(217, 119, 6, 0.05);
+    box-shadow: 0 0 20px rgba(217, 119, 6, 0.2);
     transform: translateY(-2px);
 }
 
@@ -362,15 +367,20 @@ body {
     gap: 15px;
     margin-bottom: 15px;
     padding-bottom: 15px;
-    border-bottom: 1px solid #00ff00;
+    border-bottom: 1px solid #d97706;
 }
 
 .pixel-job-title {
-    font-size: 10px;
-    color: #00ff00;
+    font-size: 14px;
+    color: #d97706;
     text-shadow: 2px 2px 0px #000000;
     flex: 1;
     min-width: 200px;
+    transition: all 0.3s ease;
+}
+
+.pixel-experience-item:hover .pixel-job-title {
+    font-size: 18px;
 }
 
 .pixel-company-info {
@@ -381,34 +391,47 @@ body {
 }
 
 .pixel-company {
-    font-size: 8px;
-    color: #00ffff;
+    font-size: 12px;
+    color: #0891b2;
     text-shadow: 1px 1px 0px #000000;
+    transition: all 0.3s ease;
 }
 
 .pixel-company a {
-    color: #00ffff;
+    color: #0891b2;
     text-decoration: none;
-    transition: color 0.3s ease;
+    transition: all 0.3s ease;
 }
 
 .pixel-company a:hover {
     color: #ffffff;
-    text-shadow: 0 0 5px #00ffff;
+    text-shadow: 0 0 5px #0891b2;
+    font-size: 16px;
+}
+
+.pixel-experience-item:hover .pixel-company {
+    font-size: 16px;
 }
 
 .pixel-website-link {
-    font-size: 7px;
-    color: #ffff00;
+    font-size: 10px;
+    color: #ca8a04;
     margin-left: 10px;
 }
 
 .pixel-date {
-    font-size: 7px;
-    color: #ffff00;
-    background: rgba(0, 255, 0, 0.1);
+    font-size: 10px;
+    color: #ca8a04;
+    background: rgba(217, 119, 6, 0.05);
     padding: 3px 8px;
-    border: 1px solid #00ff00;
+    border: 1px solid #d97706;
+    transition: all 0.3s ease;
+}
+
+.pixel-experience-item:hover .pixel-date,
+.pixel-project-item:hover .pixel-date,
+.pixel-certification-item:hover .pixel-date {
+    font-size: 14px;
 }
 
 .pixel-achievements {
@@ -418,19 +441,25 @@ body {
 }
 
 .pixel-achievement {
-    font-size: 7px;
+    font-size: 11px;
     color: #ffffff;
     text-shadow: 1px 1px 0px #000000;
     line-height: 1.6;
     padding-left: 10px;
     position: relative;
+    transition: all 0.3s ease;
 }
 
 .pixel-achievement::before {
     content: '▶';
     position: absolute;
     left: 0;
-    color: #00ff00;
+    color: #d97706;
+}
+
+.pixel-experience-item:hover .pixel-achievement {
+    font-size: 15px;
+    line-height: 1.8;
 }
 
 /* Pixel Skills Styles */
@@ -441,25 +470,30 @@ body {
 }
 
 .pixel-skill-category {
-    background: rgba(0, 255, 0, 0.05);
-    border: 2px solid #00ff00;
+    background: rgba(217, 119, 6, 0.03);
+    border: 2px solid #d97706;
     padding: 20px;
     transition: all 0.3s ease;
 }
 
 .pixel-skill-category:hover {
-    background: rgba(0, 255, 0, 0.1);
-    box-shadow: 0 0 20px #00ff00;
+    background: rgba(217, 119, 6, 0.05);
+    box-shadow: 0 0 20px rgba(217, 119, 6, 0.2);
     transform: translateY(-2px);
 }
 
 .pixel-skill-title {
-    font-size: 9px;
-    color: #00ff00;
+    font-size: 13px;
+    color: #d97706;
     margin-bottom: 15px;
     text-shadow: 2px 2px 0px #000000;
-    border-bottom: 1px solid #00ff00;
+    border-bottom: 1px solid #d97706;
     padding-bottom: 8px;
+    transition: all 0.3s ease;
+}
+
+.pixel-skill-category:hover .pixel-skill-title {
+    font-size: 17px;
 }
 
 .pixel-skill-tags {
@@ -470,33 +504,38 @@ body {
 
 .pixel-skill-tag {
     background: #000000;
-    color: #00ffff;
+    color: #0891b2;
     padding: 5px 10px;
-    border: 1px solid #00ff00;
-    font-size: 6px;
+    border: 1px solid #d97706;
+    font-size: 10px;
     transition: all 0.3s ease;
     text-shadow: 1px 1px 0px #000000;
 }
 
 .pixel-skill-tag:hover {
-    background: #00ff00;
+    background: #d97706;
     color: #000000;
-    box-shadow: 0 0 10px #00ff00;
+    box-shadow: 0 0 10px rgba(217, 119, 6, 0.3);
     transform: scale(1.05);
+    font-size: 14px;
+}
+
+.pixel-skill-category:hover .pixel-skill-tag {
+    font-size: 14px;
 }
 
 /* Pixel Project Styles */
 .pixel-project-item {
     margin-bottom: 20px;
     padding: 20px;
-    background: rgba(0, 255, 0, 0.05);
-    border: 2px solid #00ff00;
+    background: rgba(217, 119, 6, 0.03);
+    border: 2px solid #d97706;
     transition: all 0.3s ease;
 }
 
 .pixel-project-item:hover {
-    background: rgba(0, 255, 0, 0.1);
-    box-shadow: 0 0 20px #00ff00;
+    background: rgba(217, 119, 6, 0.05);
+    box-shadow: 0 0 20px rgba(217, 119, 6, 0.2);
     transform: translateY(-2px);
 }
 
@@ -512,30 +551,46 @@ body {
     gap: 15px;
     margin-bottom: 15px;
     padding-bottom: 15px;
-    border-bottom: 1px solid #00ff00;
+    border-bottom: 1px solid #d97706;
 }
 
 .pixel-project-title {
-    font-size: 9px;
-    color: #00ff00;
+    font-size: 13px;
+    color: #d97706;
     text-shadow: 2px 2px 0px #000000;
     flex: 1;
     min-width: 200px;
+    transition: all 0.3s ease;
+}
+
+.pixel-project-item:hover .pixel-project-title {
+    font-size: 17px;
 }
 
 .pixel-project-tech {
-    font-size: 7px;
-    color: #ffff00;
-    background: rgba(0, 255, 0, 0.1);
+    font-size: 10px;
+    color: #ca8a04;
+    background: rgba(217, 119, 6, 0.05);
     padding: 3px 8px;
-    border: 1px solid #00ff00;
+    border: 1px solid #d97706;
+    transition: all 0.3s ease;
+}
+
+.pixel-project-item:hover .pixel-project-tech {
+    font-size: 14px;
 }
 
 .pixel-project-description {
-    font-size: 7px;
+    font-size: 11px;
     color: #ffffff;
     line-height: 1.6;
     text-shadow: 1px 1px 0px #000000;
+    transition: all 0.3s ease;
+}
+
+.pixel-project-item:hover .pixel-project-description {
+    font-size: 15px;
+    line-height: 1.8;
 }
 
 /* Pixel Certification Styles */
@@ -547,14 +602,14 @@ body {
     gap: 15px;
     margin-bottom: 15px;
     padding: 15px;
-    background: rgba(0, 255, 0, 0.05);
-    border: 2px solid #00ff00;
+    background: rgba(217, 119, 6, 0.03);
+    border: 2px solid #d97706;
     transition: all 0.3s ease;
 }
 
 .pixel-certification-item:hover {
-    background: rgba(0, 255, 0, 0.1);
-    box-shadow: 0 0 20px #00ff00;
+    background: rgba(217, 119, 6, 0.05);
+    box-shadow: 0 0 20px rgba(217, 119, 6, 0.2);
     transform: translateY(-2px);
 }
 
@@ -563,39 +618,49 @@ body {
 }
 
 .pixel-certification-name {
-    font-size: 8px;
-    color: #00ff00;
+    font-size: 12px;
+    color: #d97706;
     text-shadow: 2px 2px 0px #000000;
     flex: 1;
     min-width: 200px;
+    transition: all 0.3s ease;
 }
 
 .pixel-certification-issuer {
-    font-size: 7px;
-    color: #00ffff;
+    font-size: 10px;
+    color: #0891b2;
     text-shadow: 1px 1px 0px #000000;
+    transition: all 0.3s ease;
+}
+
+.pixel-certification-item:hover .pixel-certification-name {
+    font-size: 16px;
+}
+
+.pixel-certification-item:hover .pixel-certification-issuer {
+    font-size: 14px;
 }
 
 .pixel-certification-date {
-    font-size: 6px;
-    color: #ffff00;
-    background: rgba(0, 255, 0, 0.1);
+    font-size: 9px;
+    color: #ca8a04;
+    background: rgba(217, 119, 6, 0.05);
     padding: 3px 8px;
-    border: 1px solid #00ff00;
+    border: 1px solid #d97706;
 }
 
 /* Pixel Community Styles */
 .pixel-community-item {
     margin-bottom: 20px;
     padding: 20px;
-    background: rgba(0, 255, 0, 0.05);
-    border: 2px solid #00ff00;
+    background: rgba(217, 119, 6, 0.03);
+    border: 2px solid #d97706;
     transition: all 0.3s ease;
 }
 
 .pixel-community-item:hover {
-    background: rgba(0, 255, 0, 0.1);
-    box-shadow: 0 0 20px #00ff00;
+    background: rgba(217, 119, 6, 0.05);
+    box-shadow: 0 0 20px rgba(217, 119, 6, 0.2);
     transform: translateY(-2px);
 }
 
@@ -604,34 +669,64 @@ body {
 }
 
 .pixel-community-title {
-    font-size: 9px;
-    color: #00ff00;
+    font-size: 13px;
+    color: #d97706;
     margin-bottom: 10px;
     text-shadow: 2px 2px 0px #000000;
+    transition: all 0.3s ease;
+}
+
+.pixel-community-item:hover .pixel-community-title {
+    font-size: 17px;
 }
 
 .pixel-community-description {
-    font-size: 7px;
+    font-size: 11px;
     color: #ffffff;
     line-height: 1.6;
     text-shadow: 1px 1px 0px #000000;
+    transition: all 0.3s ease;
+}
+
+.pixel-community-item:hover .pixel-community-description {
+    font-size: 15px;
+    line-height: 1.8;
 }
 
 /* Responsive Design */
+@media (max-width: 1024px) {
+    .pixel-container {
+        margin: 1.5rem;
+    }
+    
+    .pixel-header-frame {
+        gap: 30px;
+    }
+    
+    .pixel-contact-panel {
+        min-width: 280px;
+    }
+}
+
 @media (max-width: 768px) {
     .pixel-container {
         margin: 1rem;
+        border-width: 3px;
+    }
+    
+    .pixel-header {
+        padding: 30px;
     }
     
     .pixel-header-frame {
         flex-direction: column;
-        gap: 20px;
+        gap: 25px;
     }
     
     .pixel-profile-section {
         flex-direction: column;
         text-align: center;
-        gap: 20px;
+        gap: 25px;
     }
     
     .pixel-avatar {
@@ -640,17 +735,30 @@ body {
     }
     
     .pixel-name {
-        font-size: 20px;
+        font-size: 24px;
+    }
+    
+    .pixel-title {
+        font-size: 12px;
     }
     
     .pixel-section {
-        padding: 20px;
+        padding: 25px;
+    }
+    
+    .pixel-section-frame {
+        padding: 15px;
     }
     
     .pixel-job-header,
     .pixel-project-header {
         flex-direction: column;
         gap: 10px;
+        align-items: flex-start;
+    }
+    
+    .pixel-company-info {
+        align-items: flex-start;
     }
     
     .pixel-skills-grid {
@@ -660,12 +768,51 @@ body {
     
     .pixel-contact-panel {
         min-width: auto;
+        width: 100%;
+    }
+    
+    .pixel-contact-grid {
+        gap: 6px;
+    }
+    
+    .pixel-contact-item {
+        font-size: 11px;
+        padding: 6px;
+    }
+    
+    .pixel-summary {
+        font-size: 11px;
+    }
+    
+    .pixel-achievement {
+        font-size: 11px;
+    }
+    
+    .pixel-project-description {
+        font-size: 10px;
+    }
+    
+    .pixel-community-description {
+        font-size: 10px;
     }
 }
 
 @media (max-width: 480px) {
+    .pixel-container {
+        margin: 0.5rem;
+        border-width: 2px;
+    }
+    
     .pixel-header {
         padding: 20px;
+    }
+    
+    .pixel-header-frame {
+        gap: 20px;
+    }
+    
+    .pixel-profile-section {
+        gap: 20px;
     }
     
     .pixel-avatar {
@@ -673,8 +820,98 @@ body {
         height: 80px;
     }
     
+    .pixel-name {
+        font-size: 18px;
+    }
+    
+    .pixel-title {
+        font-size: 10px;
+    }
+    
     .pixel-section {
         padding: 15px;
+    }
+    
+    .pixel-section-frame {
+        padding: 12px;
+    }
+    
+    .pixel-section-title {
+        font-size: 14px;
+    }
+    
+    .pixel-job-title,
+    .pixel-project-title,
+    .pixel-certification-name,
+    .pixel-community-title {
+        font-size: 12px;
+    }
+    
+    .pixel-company,
+    .pixel-certification-issuer {
+        font-size: 10px;
+    }
+    
+    .pixel-date,
+    .pixel-project-tech {
+        font-size: 9px;
+    }
+    
+    .pixel-skill-tags {
+        gap: 4px;
+    }
+    
+    .pixel-skill-tag {
+        padding: 3px 6px;
+        font-size: 8px;
+    }
+    
+    .pixel-skill-title {
+        font-size: 11px;
+    }
+    
+    .pixel-summary {
+        font-size: 10px;
+    }
+    
+    .pixel-achievement {
+        font-size: 10px;
+    }
+    
+    .pixel-project-description,
+    .pixel-community-description {
+        font-size: 9px;
+    }
+    
+    .pixel-contact-item {
+        font-size: 10px;
+        padding: 5px;
+    }
+    
+    .pixel-panel-title {
+        font-size: 12px;
+    }
+    
+    .pixel-stat {
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 360px) {
+    .pixel-container {
+        margin: 0.25rem;
+    }
+    
+    .pixel-header {
+        padding: 15px;
+    }
+    
+    .pixel-section {
+        padding: 12px;
+    }
+    
+    .pixel-section-frame {
+        padding: 10px;
     }
     
     .pixel-name {
@@ -682,16 +919,22 @@ body {
     }
     
     .pixel-title {
-        font-size: 8px;
+        font-size: 9px;
     }
     
-    .pixel-skill-tags {
-        gap: 5px;
+    .pixel-avatar {
+        width: 70px;
+        height: 70px;
     }
     
     .pixel-skill-tag {
-        padding: 3px 6px;
-        font-size: 5px;
+        padding: 2px 4px;
+        font-size: 7px;
+    }
+    
+    .pixel-contact-item {
+        font-size: 9px;
+        padding: 4px;
     }
 }
 
@@ -771,10 +1014,10 @@ body {
 /* Pixel Animations */
 @keyframes pixelGlow {
     0%, 100% { 
-        box-shadow: 0 0 5px #00ff00;
+        box-shadow: 0 0 5px #d97706;
     }
     50% { 
-        box-shadow: 0 0 20px #00ff00, 0 0 30px #00ff00;
+        box-shadow: 0 0 20px #d97706, 0 0 30px #d97706;
     }
 }
 
@@ -804,6 +1047,6 @@ body {
     left: 0;
     right: 0;
     height: 2px;
-    background: linear-gradient(90deg, transparent, #00ff00, transparent);
+    background: linear-gradient(90deg, transparent, #d97706, transparent);
     animation: pixelScan 1s ease;
 } 

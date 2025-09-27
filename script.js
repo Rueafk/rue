@@ -46,7 +46,7 @@ document.addEventListener('DOMContentLoaded', function() {
             left: 0;
             width: 100%;
             height: 2px;
-            background: linear-gradient(90deg, transparent, #00ff00, transparent);
+            background: linear-gradient(90deg, transparent, #d97706, transparent);
             z-index: 10000;
             animation: pixelScan 2s ease-in-out;
             pointer-events: none;
@@ -68,28 +68,28 @@ document.addEventListener('DOMContentLoaded', function() {
             top: 20px;
             right: 20px;
             background: #000000;
-            color: #00ff00;
-            border: 2px solid #00ff00;
+            color: #d97706;
+            border: 2px solid #d97706;
             padding: 10px 20px;
             font-family: 'Press Start 2P', monospace;
-            font-size: 8px;
+            font-size: 10px;
             cursor: pointer;
             z-index: 1000;
-            box-shadow: 0 0 10px #00ff00;
+            box-shadow: 0 0 10px rgba(74, 222, 128, 0.3);
             transition: all 0.3s ease;
             image-rendering: pixelated;
         `;
         
         printBtn.addEventListener('mouseenter', function() {
-            this.style.background = '#00ff00';
+            this.style.background = '#d97706';
             this.style.color = '#000000';
-            this.style.boxShadow = '0 0 20px #00ff00';
+            this.style.boxShadow = '0 0 20px rgba(74, 222, 128, 0.5)';
         });
         
         printBtn.addEventListener('mouseleave', function() {
             this.style.background = '#000000';
-            this.style.color = '#00ff00';
-            this.style.boxShadow = '0 0 10px #00ff00';
+            this.style.color = '#d97706';
+            this.style.boxShadow = '0 0 10px rgba(74, 222, 128, 0.3)';
         });
         
         printBtn.addEventListener('click', function() {
@@ -109,8 +109,8 @@ document.addEventListener('DOMContentLoaded', function() {
         skillTags.forEach(tag => {
             tag.addEventListener('mouseenter', function() {
                 this.style.transform = 'scale(1.1)';
-                this.style.boxShadow = '0 0 15px #00ff00';
-                this.style.background = '#00ff00';
+                this.style.boxShadow = '0 0 15px rgba(74, 222, 128, 0.5)';
+                this.style.background = '#d97706';
                 this.style.color = '#000000';
             });
             
@@ -118,7 +118,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 this.style.transform = 'scale(1)';
                 this.style.boxShadow = 'none';
                 this.style.background = '#000000';
-                this.style.color = '#00ffff';
+                this.style.color = '#0891b2';
             });
         });
     }
@@ -133,9 +133,9 @@ document.addEventListener('DOMContentLoaded', function() {
                     entry.target.style.transform = 'translateY(0)';
                     
                     // Add pixel glow effect
-                    entry.target.style.boxShadow = '0 0 20px #00ff00';
+                    entry.target.style.boxShadow = '0 0 20px rgba(74, 222, 128, 0.3)';
                     setTimeout(() => {
-                        entry.target.style.boxShadow = 'inset 0 0 20px rgba(0, 255, 0, 0.1)';
+                        entry.target.style.boxShadow = 'inset 0 0 20px rgba(74, 222, 128, 0.05)';
                     }, 1000);
                 }
             });
@@ -158,14 +158,14 @@ document.addEventListener('DOMContentLoaded', function() {
         experienceItems.forEach(item => {
             item.addEventListener('mouseenter', function() {
                 this.style.transform = 'translateY(-5px)';
-                this.style.boxShadow = '0 0 25px #00ff00';
-                this.style.borderColor = '#00ffff';
+                this.style.boxShadow = '0 0 25px rgba(74, 222, 128, 0.3)';
+                this.style.borderColor = '#0891b2';
             });
             
             item.addEventListener('mouseleave', function() {
                 this.style.transform = 'translateY(0)';
                 this.style.boxShadow = 'none';
-                this.style.borderColor = '#00ff00';
+                this.style.borderColor = '#d97706';
             });
         });
     }
@@ -176,7 +176,7 @@ document.addEventListener('DOMContentLoaded', function() {
         if (nameElement) {
             const originalText = nameElement.textContent;
             nameElement.textContent = '';
-            nameElement.style.borderRight = '4px solid #00ff00';
+            nameElement.style.borderRight = '4px solid #d97706';
             nameElement.style.animation = 'pixelBlink 1s infinite';
             
             let i = 0;
@@ -209,7 +209,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     position: absolute;
                     width: ${size}px;
                     height: ${size}px;
-                    background: #00ff00;
+                    background: #d97706;
                     pointer-events: none;
                     animation: pixelFloat ${speed}s ease-in-out infinite;
                     animation-delay: ${delay}s;
@@ -239,10 +239,10 @@ document.addEventListener('DOMContentLoaded', function() {
         
         @keyframes pixelGlow {
             0%, 100% { 
-                box-shadow: 0 0 5px #00ff00; 
+                box-shadow: 0 0 5px #d97706; 
             }
             50% { 
-                box-shadow: 0 0 20px #00ff00, 0 0 30px #00ff00; 
+                box-shadow: 0 0 20px #d97706, 0 0 30px #d97706; 
             }
         }
         
@@ -273,12 +273,12 @@ document.addEventListener('DOMContentLoaded', function() {
                 
                 // Add pixel click animation
                 this.style.transform = 'scale(0.95)';
-                this.style.background = '#00ff00';
+                this.style.background = '#d97706';
                 this.style.color = '#000000';
                 setTimeout(() => {
                     this.style.transform = 'scale(1)';
-                    this.style.background = 'rgba(0, 255, 0, 0.1)';
-                    this.style.color = '#00ff00';
+                    this.style.background = 'rgba(74, 222, 128, 0.1)';
+                    this.style.color = '#d97706';
                 }, 150);
                 
                 // Email
@@ -317,12 +317,12 @@ document.addEventListener('DOMContentLoaded', function() {
             left: 50%;
             transform: translateX(-50%);
             background: #000000;
-            color: ${type === 'success' ? '#00ff00' : '#00ffff'};
-            border: 2px solid ${type === 'success' ? '#00ff00' : '#00ffff'};
+            color: ${type === 'success' ? '#d97706' : '#0891b2'};
+            border: 2px solid ${type === 'success' ? '#d97706' : '#0891b2'};
             padding: 15px 25px;
             font-family: 'Press Start 2P', monospace;
-            font-size: 8px;
-            box-shadow: 0 0 20px ${type === 'success' ? '#00ff00' : '#00ffff'};
+            font-size: 10px;
+            box-shadow: 0 0 20px ${type === 'success' ? 'rgba(74, 222, 128, 0.3)' : 'rgba(34, 211, 238, 0.3)'};
             z-index: 10000;
             animation: pixelSlideIn 0.3s ease;
             image-rendering: pixelated;
@@ -347,10 +347,10 @@ document.addEventListener('DOMContentLoaded', function() {
             left: 0;
             width: 0%;
             height: 4px;
-            background: linear-gradient(90deg, #00ff00 0%, #00ffff 50%, #ff00ff 100%);
+            background: linear-gradient(90deg, #d97706 0%, #0891b2 50%, #ca8a04 100%);
             z-index: 1001;
             transition: width 0.1s ease;
-            box-shadow: 0 2px 8px #00ff00;
+            box-shadow: 0 2px 8px rgba(217, 119, 6, 0.2);
             image-rendering: pixelated;
         `;
         document.body.appendChild(progressBar);
@@ -366,12 +366,12 @@ document.addEventListener('DOMContentLoaded', function() {
         const sectionTitles = document.querySelectorAll('.pixel-section-title');
         sectionTitles.forEach(title => {
             title.addEventListener('mouseenter', function() {
-                this.style.color = '#00ffff';
-                this.style.textShadow = '0 0 10px #00ffff';
+                this.style.color = '#0891b2';
+                this.style.textShadow = '0 0 10px #0891b2';
             });
             
             title.addEventListener('mouseleave', function() {
-                this.style.color = '#00ff00';
+                this.style.color = '#d97706';
                 this.style.textShadow = '2px 2px 0px #000000';
             });
         });
@@ -447,7 +447,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
         
         .pixel-section:hover .pixel-section-title {
-            color: #00ffff;
+            color: #0891b2;
             transition: color 0.3s ease;
         }
         
@@ -458,7 +458,7 @@ document.addEventListener('DOMContentLoaded', function() {
             left: 0;
             right: 0;
             height: 2px;
-            background: linear-gradient(90deg, transparent, #00ff00, transparent);
+            background: linear-gradient(90deg, transparent, #d97706, transparent);
             animation: pixelScan 1s ease;
         }
     `;
@@ -479,9 +479,9 @@ document.addEventListener('DOMContentLoaded', function() {
     });
     
     // Add pixel-style cursor
-    document.body.style.cursor = 'url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'16\' height=\'16\' viewBox=\'0 0 16 16\'><rect width=\'16\' height=\'16\' fill=\'%2300ff00\'/></svg>") 8 8, auto';
+    document.body.style.cursor = 'url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'16\' height=\'16\' viewBox=\'0 0 16 16\'><rect width=\'16\' height=\'16\' fill=\'%234ade80\'/></svg>") 8 8, auto';
     
-    // Pixel-style background pattern
+    // Static pixel-style background pattern
     const backgroundPattern = document.createElement('div');
     backgroundPattern.style.cssText = `
         position: fixed;
@@ -490,11 +490,11 @@ document.addEventListener('DOMContentLoaded', function() {
         width: 100%;
         height: 100%;
         background-image: 
-            radial-gradient(circle at 25% 25%, rgba(0, 255, 0, 0.1) 0%, transparent 50%),
-            radial-gradient(circle at 75% 75%, rgba(0, 255, 255, 0.1) 0%, transparent 50%);
+            radial-gradient(circle at 20% 20%, rgba(74, 222, 128, 0.03) 0%, transparent 50%),
+            radial-gradient(circle at 80% 80%, rgba(34, 211, 238, 0.03) 0%, transparent 50%),
+            radial-gradient(circle at 40% 60%, rgba(251, 191, 36, 0.02) 0%, transparent 50%);
         pointer-events: none;
         z-index: -1;
-        animation: pixelFlicker 4s ease-in-out infinite;
     `;
     document.body.appendChild(backgroundPattern);
     
