@@ -46,7 +46,7 @@ document.addEventListener('DOMContentLoaded', function() {
             left: 0;
             width: 100%;
             height: 2px;
-            background: linear-gradient(90deg, transparent, #d97706, transparent);
+            background: linear-gradient(90deg, transparent, #00ff41, transparent);
             z-index: 10000;
             animation: pixelScan 2s ease-in-out;
             pointer-events: none;
@@ -68,8 +68,8 @@ document.addEventListener('DOMContentLoaded', function() {
             top: 20px;
             right: 20px;
             background: #000000;
-            color: #d97706;
-            border: 2px solid #d97706;
+            color: #00ff41;
+            border: 2px solid #00ff41;
             padding: 10px 20px;
             font-family: 'Press Start 2P', monospace;
             font-size: 10px;
@@ -81,14 +81,14 @@ document.addEventListener('DOMContentLoaded', function() {
         `;
         
         printBtn.addEventListener('mouseenter', function() {
-            this.style.background = '#d97706';
+            this.style.background = '#00ff41';
             this.style.color = '#000000';
             this.style.boxShadow = '0 0 20px rgba(74, 222, 128, 0.5)';
         });
         
         printBtn.addEventListener('mouseleave', function() {
             this.style.background = '#000000';
-            this.style.color = '#d97706';
+            this.style.color = '#00ff41';
             this.style.boxShadow = '0 0 10px rgba(74, 222, 128, 0.3)';
         });
         
@@ -110,7 +110,7 @@ document.addEventListener('DOMContentLoaded', function() {
             tag.addEventListener('mouseenter', function() {
                 this.style.transform = 'scale(1.1)';
                 this.style.boxShadow = '0 0 15px rgba(74, 222, 128, 0.5)';
-                this.style.background = '#d97706';
+                this.style.background = '#00ff41';
                 this.style.color = '#000000';
             });
             
@@ -118,7 +118,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 this.style.transform = 'scale(1)';
                 this.style.boxShadow = 'none';
                 this.style.background = '#000000';
-                this.style.color = '#0891b2';
+                this.style.color = '#00ffff';
             });
         });
     }
@@ -159,13 +159,13 @@ document.addEventListener('DOMContentLoaded', function() {
             item.addEventListener('mouseenter', function() {
                 this.style.transform = 'translateY(-5px)';
                 this.style.boxShadow = '0 0 25px rgba(74, 222, 128, 0.3)';
-                this.style.borderColor = '#0891b2';
+                this.style.borderColor = '#00ffff';
             });
             
             item.addEventListener('mouseleave', function() {
                 this.style.transform = 'translateY(0)';
                 this.style.boxShadow = 'none';
-                this.style.borderColor = '#d97706';
+                this.style.borderColor = '#00ff41';
             });
         });
     }
@@ -176,7 +176,7 @@ document.addEventListener('DOMContentLoaded', function() {
         if (nameElement) {
             const originalText = nameElement.textContent;
             nameElement.textContent = '';
-            nameElement.style.borderRight = '4px solid #d97706';
+            nameElement.style.borderRight = '4px solid #00ff41';
             nameElement.style.animation = 'pixelBlink 1s infinite';
             
             let i = 0;
@@ -209,7 +209,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     position: absolute;
                     width: ${size}px;
                     height: ${size}px;
-                    background: #d97706;
+                    background: #00ff41;
                     pointer-events: none;
                     animation: pixelFloat ${speed}s ease-in-out infinite;
                     animation-delay: ${delay}s;
@@ -239,10 +239,10 @@ document.addEventListener('DOMContentLoaded', function() {
         
         @keyframes pixelGlow {
             0%, 100% { 
-                box-shadow: 0 0 5px #d97706; 
+                box-shadow: 0 0 5px #00ff41; 
             }
             50% { 
-                box-shadow: 0 0 20px #d97706, 0 0 30px #d97706; 
+                box-shadow: 0 0 20px #00ff41, 0 0 30px #00ff41; 
             }
         }
         
@@ -273,12 +273,12 @@ document.addEventListener('DOMContentLoaded', function() {
                 
                 // Add pixel click animation
                 this.style.transform = 'scale(0.95)';
-                this.style.background = '#d97706';
+                this.style.background = '#00ff41';
                 this.style.color = '#000000';
                 setTimeout(() => {
                     this.style.transform = 'scale(1)';
                     this.style.background = 'rgba(74, 222, 128, 0.1)';
-                    this.style.color = '#d97706';
+                    this.style.color = '#00ff41';
                 }, 150);
                 
                 // Email
@@ -317,8 +317,8 @@ document.addEventListener('DOMContentLoaded', function() {
             left: 50%;
             transform: translateX(-50%);
             background: #000000;
-            color: ${type === 'success' ? '#d97706' : '#0891b2'};
-            border: 2px solid ${type === 'success' ? '#d97706' : '#0891b2'};
+            color: ${type === 'success' ? '#00ff41' : '#00ffff'};
+            border: 2px solid ${type === 'success' ? '#00ff41' : '#00ffff'};
             padding: 15px 25px;
             font-family: 'Press Start 2P', monospace;
             font-size: 10px;
@@ -347,10 +347,10 @@ document.addEventListener('DOMContentLoaded', function() {
             left: 0;
             width: 0%;
             height: 4px;
-            background: linear-gradient(90deg, #d97706 0%, #0891b2 50%, #ca8a04 100%);
+            background: linear-gradient(90deg, #00ff41 0%, #00ffff 50%, #ffff00 100%);
             z-index: 1001;
             transition: width 0.1s ease;
-            box-shadow: 0 2px 8px rgba(217, 119, 6, 0.2);
+            box-shadow: 0 2px 8px rgba(0, 255, 65, 0.3);
             image-rendering: pixelated;
         `;
         document.body.appendChild(progressBar);
@@ -366,12 +366,12 @@ document.addEventListener('DOMContentLoaded', function() {
         const sectionTitles = document.querySelectorAll('.pixel-section-title');
         sectionTitles.forEach(title => {
             title.addEventListener('mouseenter', function() {
-                this.style.color = '#0891b2';
-                this.style.textShadow = '0 0 10px #0891b2';
+                this.style.color = '#00ffff';
+                this.style.textShadow = '0 0 10px #00ffff';
             });
             
             title.addEventListener('mouseleave', function() {
-                this.style.color = '#d97706';
+                this.style.color = '#00ff41';
                 this.style.textShadow = '2px 2px 0px #000000';
             });
         });
@@ -447,7 +447,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
         
         .pixel-section:hover .pixel-section-title {
-            color: #0891b2;
+            color: #00ffff;
             transition: color 0.3s ease;
         }
         
@@ -458,7 +458,7 @@ document.addEventListener('DOMContentLoaded', function() {
             left: 0;
             right: 0;
             height: 2px;
-            background: linear-gradient(90deg, transparent, #d97706, transparent);
+            background: linear-gradient(90deg, transparent, #00ff41, transparent);
             animation: pixelScan 1s ease;
         }
     `;
