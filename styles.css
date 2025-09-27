@@ -696,73 +696,73 @@ body {
 /* Responsive Design */
 @media (max-width: 1024px) {
     .pixel-container {
-        margin: 1.5rem;
-        border-width: 3px;
+        margin: 1rem;
+        border-width: 2px;
     }
     
     .pixel-header-frame {
-        gap: 30px;
+        gap: 20px;
     }
     
     .pixel-contact-panel {
-        min-width: 280px;
+        min-width: 250px;
     }
     
     .pixel-name {
-        font-size: 28px;
+        font-size: 24px;
     }
     
     .pixel-title {
-        font-size: 12px;
+        font-size: 10px;
     }
 }
 
 @media (max-width: 768px) {
     .pixel-container {
-        margin: 0.75rem;
-        border-width: 2px;
+        margin: 0.5rem;
+        border-width: 1px;
     }
     
     .pixel-header {
-        padding: 25px;
+        padding: 15px;
     }
     
     .pixel-header-frame {
         flex-direction: column;
-        gap: 20px;
+        gap: 15px;
     }
     
     .pixel-profile-section {
         flex-direction: column;
         text-align: center;
-        gap: 20px;
+        gap: 15px;
     }
     
     .pixel-avatar {
-        width: 90px;
-        height: 90px;
+        width: 80px;
+        height: 80px;
     }
     
     .pixel-name {
-        font-size: 22px;
+        font-size: 18px;
     }
     
     .pixel-title {
-        font-size: 11px;
+        font-size: 9px;
     }
     
     .pixel-section {
-        padding: 20px;
+        padding: 15px;
     }
     
     .pixel-section-frame {
-        padding: 12px;
+        padding: 10px;
     }
     
     .pixel-job-header,
     .pixel-project-header {
         flex-direction: column;
-        gap: 8px;
+        gap: 6px;
         align-items: flex-start;
     }
     
@@ -772,167 +772,53 @@ body {
     
     .pixel-skills-grid {
         grid-template-columns: 1fr;
-        gap: 12px;
+        gap: 10px;
     }
     
     .pixel-contact-panel {
         min-width: auto;
         width: 100%;
-        padding: 15px;
+        padding: 12px;
     }
     
     .pixel-contact-grid {
-        gap: 5px;
+        gap: 4px;
     }
     
     .pixel-contact-item {
-        font-size: 10px;
-        padding: 5px;
+        font-size: 9px;
+        padding: 4px;
     }
     
     .pixel-summary {
-        font-size: 10px;
+        font-size: 9px;
     }
     
     .pixel-achievement {
-        font-size: 10px;
+        font-size: 9px;
     }
     
     .pixel-project-description {
-        font-size: 9px;
+        font-size: 8px;
     }
     
     .pixel-community-description {
-        font-size: 9px;
+        font-size: 8px;
     }
     
     .pixel-section-title {
-        font-size: 14px;
+        font-size: 12px;
     }
     
     .pixel-job-title,
     .pixel-project-title,
     .pixel-certification-name,
     .pixel-community-title {
-        font-size: 12px;
+        font-size: 10px;
     }
 }
 
 @media (max-width: 480px) {
-    .pixel-container {
-        margin: 0.25rem;
-        border-width: 1px;
-    }
-    
-    .pixel-header {
-        padding: 15px;
-    }
-    
-    .pixel-header-frame {
-        gap: 15px;
-    }
-    
-    .pixel-profile-section {
-        gap: 15px;
-    }
-    
-    .pixel-avatar {
-        width: 70px;
-        height: 70px;
-    }
-    
-    .pixel-name {
-        font-size: 16px;
-    }
-    
-    .pixel-title {
-        font-size: 9px;
-    }
-    
-    .pixel-section {
-        padding: 12px;
-    }
-    
-    .pixel-section-frame {
-        padding: 8px;
-    }
-    
-    .pixel-section-title {
-        font-size: 12px;
-    }
-    
-    .pixel-job-title,
-    .pixel-project-title,
-    .pixel-certification-name,
-    .pixel-community-title {
-        font-size: 10px;
-    }
-    
-    .pixel-company,
-    .pixel-certification-issuer {
-        font-size: 8px;
-    }
-    
-    .pixel-date,
-    .pixel-project-tech {
-        font-size: 7px;
-    }
-    
-    .pixel-skill-tags {
-        gap: 3px;
-    }
-    
-    .pixel-skill-tag {
-        padding: 2px 4px;
-        font-size: 6px;
-    }
-    
-    .pixel-skill-title {
-        font-size: 9px;
-    }
-    
-    .pixel-summary {
-        font-size: 8px;
-        line-height: 1.4;
-    }
-    
-    .pixel-achievement {
-        font-size: 8px;
-    }
-    
-    .pixel-project-description,
-    .pixel-community-description {
-        font-size: 7px;
-    }
-    
-    .pixel-contact-item {
-        font-size: 8px;
-        padding: 3px;
-    }
-    
-    .pixel-panel-title {
-        font-size: 10px;
-    }
-    
-    .pixel-stat {
-        font-size: 8px;
-    }
-    
-    .pixel-contact-panel {
-        padding: 10px;
-    }
-    
-    .pixel-job-header,
-    .pixel-project-header {
-        gap: 5px;
-    }
-    
-    .pixel-skills-grid {
-        gap: 8px;
-    }
-}
-
-@media (max-width: 360px) {
     .pixel-container {
         margin: 0.1rem;
         border-width: 1px;
@@ -940,6 +826,27 @@ body {
     
     .pixel-header {
         padding: 10px;
+    }
+    
+    .pixel-header-frame {
+        gap: 10px;
+    }
+    
+    .pixel-profile-section {
+        gap: 10px;
+    }
+    
+    .pixel-avatar {
+        width: 60px;
+        height: 60px;
+    }
+    
+    .pixel-name {
+        font-size: 14px;
+    }
+    
+    .pixel-title {
+        font-size: 7px;
     }
     
     .pixel-section {
@@ -950,29 +857,6 @@ body {
         padding: 6px;
     }
     
-    .pixel-name {
-        font-size: 14px;
-    }
-    
-    .pixel-title {
-        font-size: 8px;
-    }
-    
-    .pixel-avatar {
-        width: 60px;
-        height: 60px;
-    }
-    
-    .pixel-skill-tag {
-        padding: 1px 3px;
-        font-size: 5px;
-    }
-    
-    .pixel-contact-item {
-        font-size: 7px;
-        padding: 2px;
-    }
-    
     .pixel-section-title {
         font-size: 10px;
     }
@@ -984,36 +868,78 @@ body {
         font-size: 8px;
     }
     
-    .pixel-summary {
+    .pixel-company,
+    .pixel-certification-issuer {
+        font-size: 6px;
+    }
+    
+    .pixel-date,
+    .pixel-project-tech {
+        font-size: 5px;
+    }
+    
+    .pixel-skill-tags {
+        gap: 2px;
+    }
+    
+    .pixel-skill-tag {
+        padding: 1px 3px;
+        font-size: 4px;
+    }
+    
+    .pixel-skill-title {
         font-size: 7px;
     }
     
+    .pixel-summary {
+        font-size: 6px;
+        line-height: 1.3;
+    }
+    
     .pixel-achievement {
-        font-size: 7px;
+        font-size: 6px;
     }
     
     .pixel-project-description,
     .pixel-community-description {
-        font-size: 6px;
+        font-size: 5px;
     }
     
-    .pixel-contact-panel {
-        padding: 8px;
+    .pixel-contact-item {
+        font-size: 6px;
+        padding: 2px;
     }
     
     .pixel-panel-title {
         font-size: 8px;
     }
+    
+    .pixel-stat {
+        font-size: 6px;
+    }
+    
+    .pixel-contact-panel {
+        padding: 6px;
+    }
+    
+    .pixel-job-header,
+    .pixel-project-header {
+        gap: 3px;
+    }
+    
+    .pixel-skills-grid {
+        gap: 6px;
+    }
 }
 
-/* Extra small phones */
-@media (max-width: 320px) {
+@media (max-width: 360px) {
     .pixel-container {
         margin: 0.05rem;
+        border-width: 1px;
     }
     
     .pixel-header {
-        padding: 8px;
+        padding: 6px;
     }
     
     .pixel-section {
@@ -1029,7 +955,7 @@ body {
     }
     
     .pixel-title {
-        font-size: 7px;
+        font-size: 6px;
     }
     
     .pixel-avatar {
@@ -1039,11 +965,11 @@ body {
     
     .pixel-skill-tag {
         padding: 1px 2px;
-        font-size: 4px;
+        font-size: 3px;
     }
     
     .pixel-contact-item {
-        font-size: 6px;
+        font-size: 5px;
         padding: 1px;
     }
     
@@ -1051,17 +977,112 @@ body {
         font-size: 8px;
     }
     
-    .pixel-summary {
+    .pixel-job-title,
+    .pixel-project-title,
+    .pixel-certification-name,
+    .pixel-community-title {
         font-size: 6px;
     }
     
+    .pixel-summary {
+        font-size: 5px;
+    }
+    
     .pixel-achievement {
-        font-size: 6px;
+        font-size: 5px;
     }
     
     .pixel-project-description,
     .pixel-community-description {
+        font-size: 4px;
+    }
+    
+    .pixel-contact-panel {
+        padding: 4px;
+    }
+    
+    .pixel-panel-title {
+        font-size: 6px;
+    }
+}
+
+/* Extra small phones */
+@media (max-width: 320px) {
+    .pixel-container {
+        margin: 0.02rem;
+    }
+    
+    .pixel-header {
+        padding: 4px;
+    }
+    
+    .pixel-section {
+        padding: 4px;
+    }
+    
+    .pixel-section-frame {
+        padding: 3px;
+    }
+    
+    .pixel-name {
+        font-size: 10px;
+    }
+    
+    .pixel-title {
         font-size: 5px;
+    }
+    
+    .pixel-avatar {
+        width: 40px;
+        height: 40px;
+    }
+    
+    .pixel-skill-tag {
+        padding: 0px 1px;
+        font-size: 2px;
+    }
+    
+    .pixel-contact-item {
+        font-size: 4px;
+        padding: 0px;
+    }
+    
+    .pixel-section-title {
+        font-size: 6px;
+    }
+    
+    .pixel-summary {
+        font-size: 4px;
+    }
+    
+    .pixel-achievement {
+        font-size: 4px;
+    }
+    
+    .pixel-project-description,
+    .pixel-community-description {
+        font-size: 3px;
+    }
+}
+
+/* Mobile font optimization */
+@media (max-width: 768px) {
+    body {
+        font-family: 'Press Start 2P', monospace;
+        -webkit-text-size-adjust: 100%;
+        -ms-text-size-adjust: 100%;
+        text-size-adjust: 100%;
+    }
+    
+    .pixel-name,
+    .pixel-title,
+    .pixel-section-title,
+    .pixel-job-title,
+    .pixel-project-title,
+    .pixel-certification-name,
+    .pixel-community-title {
+        word-break: break-word;
+        hyphens: auto;
     }
 }
 
@@ -1069,26 +1090,26 @@ body {
 @media (max-width: 768px) and (orientation: landscape) {
     .pixel-header-frame {
         flex-direction: row;
-        gap: 15px;
+        gap: 10px;
     }
     
     .pixel-profile-section {
         flex-direction: row;
         text-align: left;
-        gap: 15px;
+        gap: 10px;
     }
     
     .pixel-avatar {
-        width: 60px;
-        height: 60px;
+        width: 50px;
+        height: 50px;
     }
     
     .pixel-name {
-        font-size: 16px;
+        font-size: 14px;
     }
     
     .pixel-title {
-        font-size: 9px;
+        font-size: 7px;
     }
 }
 
