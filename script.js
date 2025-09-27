@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', function() {
             mainContent.style.opacity = '1';
             mainContent.style.transform = 'translateY(0)';
         }, 500);
-    }, 2000); // Show loading for 2 seconds
+    }, 3500); // Show loading for 3.5 seconds
     
     // Fallback: If loading takes too long, show content anyway
     setTimeout(() => {
