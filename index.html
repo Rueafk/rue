@@ -3,317 +3,368 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rue</title>
+    <title>Rue - Pixel Resume</title>
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-   <!-- Loading Screen -->
-   <div id="loadingScreen" class="loading-screen">
-       <div class="loading-content">
-                        <div class="loading-penguin">
-                            <img src="image/RueLoading.gif" alt="Loading..." style="width: 80px; height: 80px;">
-                        </div>
-                        <div class="loading-text">Thanks for your attention<span class="animated-dots">...</span></div>
+   <!-- Pixel Loading Screen -->
+   <div id="loadingScreen" class="pixel-loading-screen">
+       <div class="pixel-loading-content">
+           <div class="pixel-loading-frame">
+               <div class="pixel-loading-penguin">
+                   <img src="image/RueLoading.gif" alt="Loading..." class="pixel-gif">
+               </div>
+               <div class="pixel-loading-text">INITIALIZING RUE.EXE<span class="pixel-dots">...</span></div>
+               <div class="pixel-progress-bar">
+                   <div class="pixel-progress-fill"></div>
+               </div>
+           </div>
        </div>
    </div>
 
-   <div class="container" id="mainContent" style="display: none;">
-        <!-- Header Section -->
-        <header class="header">
-            <div class="header-content">
-                <div class="profile-section">
-                    <div class="profile-pic-container">
-                        <div class="profile-pic" id="profilePicContainer">
-                            <img id="profileImage" src="image/Pengu.gif" alt="Rue" style="display: block !important; visibility: visible !important; opacity: 1 !important;">
-                            <div class="profile-pic-placeholder" id="profilePlaceholder" style="display: none !important;">
-                                <i class="fas fa-user"></i>
-                            </div>
+   <div class="pixel-container" id="mainContent" style="display: none;">
+        <!-- Pixel Header Section -->
+        <header class="pixel-header">
+            <div class="pixel-header-frame">
+                <div class="pixel-profile-section">
+                    <div class="pixel-avatar-container">
+                        <div class="pixel-avatar" id="profilePicContainer">
+                            <img id="profileImage" src="image/Pengu.gif" alt="Rue" class="pixel-avatar-img">
                         </div>
-
                     </div>
-                    <div class="name-title">
-                        <h1 class="name">Rue</h1>
-                        <h2 class="title">Community Manager & Alpha Hunter</h2>
-                        <p class="subtitle">• Core Team Member at TitanDAO<br>• Co-Founder at PixelizeDAO<br>• Full-Time Trader</p>
+                    <div class="pixel-name-section">
+                        <h1 class="pixel-name">RUE</h1>
+                        <div class="pixel-title-frame">
+                            <h2 class="pixel-title">COMMUNITY MANAGER & ALPHA HUNTER</h2>
+                        </div>
+                        <div class="pixel-stats">
+                            <div class="pixel-stat">• CORE TEAM @ TITANDAO</div>
+                            <div class="pixel-stat">• CO-FOUNDER @ PIXELIZEDAO</div>
+                            <div class="pixel-stat">• FULL-TIME TRADER</div>
+                        </div>
                     </div>
                 </div>
-                <div class="contact-info">
-                    <div class="contact-item">
-                        <i class="fab fa-discord"></i>
-                        <span>.rue</span>
-                    </div>
-                    <div class="contact-item">
-                        <i class="fab fa-twitter"></i>
-                        <span>@RueNGMI</span>
-                    </div>
-                    <div class="contact-item">
-                        <i class="fab fa-github"></i>
-                        <span>github.com/Rueafk</span>
-                    </div>
-                    <div class="contact-item">
-                        <i class="fas fa-envelope"></i>
-                        <span>rueafk@gmail.com</span>
-                    </div>
-                    <div class="contact-item">
-                        <i class="fas fa-map-marker-alt"></i>
-                        <span>Asia • UTC+6:30</span>
+                <div class="pixel-contact-panel">
+                    <div class="pixel-panel-title">CONTACT INFO</div>
+                    <div class="pixel-contact-grid">
+                        <div class="pixel-contact-item">
+                            <span class="pixel-icon">[D]</span>
+                            <span>.rue</span>
+                        </div>
+                        <div class="pixel-contact-item">
+                            <span class="pixel-icon">[T]</span>
+                            <span>@RueNGMI</span>
+                        </div>
+                        <div class="pixel-contact-item">
+                            <span class="pixel-icon">[G]</span>
+                            <span>github.com/Rueafk</span>
+                        </div>
+                        <div class="pixel-contact-item">
+                            <span class="pixel-icon">[E]</span>
+                            <span>rueafk@gmail.com</span>
+                        </div>
+                        <div class="pixel-contact-item">
+                            <span class="pixel-icon">[L]</span>
+                            <span>ASIA • UTC+6:30</span>
+                        </div>
                     </div>
                 </div>
             </div>
         </header>
 
-        <!-- Summary Section -->
-        <section class="section">
-            <h3 class="section-title">Professional Summary</h3>
-            <p class="summary">
-                Experienced Web3 professional with 3+ years as a collaboration manager, administrator, moderator, and alpha hunter across 13+ DAOs. 
-                Core team member at TitanDAO and Co-Founder at PixelizeDAO. Full-time futures trader with deep understanding of market dynamics. 
-                Currently expanding skillset through coding and web development. Proven track record of building engaged communities, managing large-scale events, 
-                and identifying profitable opportunities in the Web3 ecosystem.
-            </p>
-        </section>
-
-        <!-- Experience Section -->
-        <section class="section">
-            <h3 class="section-title">Professional Experience</h3>
-            
-            <div class="experience-item">
-                <div class="experience-header">
-                    <h4 class="job-title">Core Team Member</h4>
-                    <span class="company">
-                        <a href="https://x.com/TheTitan_DAO" target="_blank" rel="noopener noreferrer">
-                            <i class="fab fa-twitter"></i> TitanDAO
-                        </a>
-                    </span>
-                    <span class="date">2023 - Present</span>
+        <!-- Pixel Summary Section -->
+        <section class="pixel-section">
+            <div class="pixel-section-frame">
+                <div class="pixel-section-header">
+                    <h3 class="pixel-section-title">[PROFESSIONAL SUMMARY]</h3>
                 </div>
-                <ul class="achievements">
-                    <li>Lead community management and strategic initiatives for TitanDAO ecosystem</li>
-                    <li>Coordinate with core team on governance decisions and community development</li>
-                    <li>Manage Discord servers and social media presence for the DAO</li>
-                    <li>Facilitate communication between developers, investors, and community members</li>
-                    <li>Organize community events, AMAs, and educational sessions</li>
-                </ul>
-            </div>
-
-            <div class="experience-item">
-                <div class="experience-header">
-                    <h4 class="job-title">Co-Founder</h4>
-                    <span class="company">
-                        <a href="https://x.com/Pixelizedao" target="_blank" rel="noopener noreferrer">
-                            <i class="fab fa-twitter"></i> PixelizeDAO
-                        </a>
-                        <span class="company-links">
-                            <a href="https://www.pixelizedao.xyz/" target="_blank" rel="noopener noreferrer" class="website-link">
-                                <i class="fas fa-globe"></i> Website
-                            </a>
-                        </span>
-                    </span>
-                    <span class="date">2023 - Present</span>
+                <div class="pixel-summary-box">
+                    <p class="pixel-summary">
+                        EXPERIENCED WEB3 PROFESSIONAL WITH 3+ YEARS AS A COLLABORATION MANAGER, 
+                        ADMINISTRATOR, MODERATOR, AND ALPHA HUNTER ACROSS 13+ DAOs. CORE TEAM 
+                        MEMBER AT TITANDAO AND CO-FOUNDER AT PIXELIZEDAO. FULL-TIME FUTURES 
+                        TRADER WITH DEEP UNDERSTANDING OF MARKET DYNAMICS. CURRENTLY EXPANDING 
+                        SKILLSET THROUGH CODING AND WEB DEVELOPMENT. PROVEN TRACK RECORD OF 
+                        BUILDING ENGAGED COMMUNITIES, MANAGING LARGE-SCALE EVENTS, AND IDENTIFYING 
+                        PROFITABLE OPPORTUNITIES IN THE WEB3 ECOSYSTEM.
+                    </p>
                 </div>
-                <ul class="achievements">
-                    <li>Co-founded and established PixelizeDAO from concept to active community</li>
-                    <li>Developed governance structure and community guidelines for the DAO</li>
-                    <li>Lead strategic planning and community growth initiatives</li>
-                    <li>Manage partnerships and collaborations with other Web3 projects</li>
-                    <li>Coordinate with founding team on vision and roadmap execution</li>
-                </ul>
-            </div>
-
-            <div class="experience-item">
-                <div class="experience-header">
-                    <h4 class="job-title">Community Manager & Alpha Hunter</h4>
-                    <span class="company">11+ DAOs</span>
-                    <span class="date">2021 - Present</span>
-                </div>
-                <ul class="achievements">
-                    <li>Manage and moderate communities across 11+ different DAOs and Web3 projects</li>
-                    <li>Identify and analyze alpha opportunities in emerging Web3 projects and protocols</li>
-                    <li>Develop community guidelines and moderation policies for decentralized communities</li>
-                    <li>Organize community events, AMAs, and educational sessions for blockchain projects</li>
-                    <li>Provide strategic insights and market analysis to community members</li>
-                </ul>
-            </div>
-
-            <div class="experience-item">
-                <div class="experience-header">
-                    <h4 class="job-title">Full-Time Futures Trader</h4>
-                    <span class="company">Self-Employed</span>
-                    <span class="date">2022 - Present</span>
-                </div>
-                <ul class="achievements">
-                    <li>Trade futures markets with focus on crypto and traditional financial instruments</li>
-                    <li>Develop and execute trading strategies based on technical and fundamental analysis</li>
-                    <li>Manage risk and portfolio allocation across multiple asset classes</li>
-                    <li>Stay current with market trends and economic indicators</li>
-                    <li>Apply trading insights to Web3 project evaluation and alpha hunting</li>
-                </ul>
-            </div>
-
-            <div class="experience-item">
-                <div class="experience-header">
-                    <h4 class="job-title">Web Development Student</h4>
-                    <span class="company">Self-Learning</span>
-                    <span class="date">2024 - Present</span>
-                </div>
-                <ul class="achievements">
-                    <li>Currently learning HTML, CSS, JavaScript, and modern web development frameworks</li>
-                    <li>Building personal projects to develop practical coding skills</li>
-                    <li>Studying React, Node.js, and Web3 integration for future development work</li>
-                    <li>Contributing to open-source projects and collaborating with other developers</li>
-                </ul>
             </div>
         </section>
 
-        <!-- Skills Section -->
-        <section class="section">
-            <h3 class="section-title">Technical Skills</h3>
-            <div class="skills-grid">
-                <div class="skill-category">
-                    <h4>Community Management</h4>
-                    <div class="skill-tags">
-                        <span class="skill-tag">Discord Administration</span>
-                        <span class="skill-tag">Community Moderation</span>
-                        <span class="skill-tag">Event Organization</span>
-                        <span class="skill-tag">Social Media Management</span>
-                        <span class="skill-tag">Content Creation</span>
-                        <span class="skill-tag">Bot Integration</span>
-                        <span class="skill-tag">Role Management</span>
-                        <span class="skill-tag">Community Guidelines</span>
-                        <span class="skill-tag">DAO Governance</span>
-                        <span class="skill-tag">Strategic Planning</span>
+        <!-- Pixel Experience Section -->
+        <section class="pixel-section">
+            <div class="pixel-section-frame">
+                <div class="pixel-section-header">
+                    <h3 class="pixel-section-title">[PROFESSIONAL EXPERIENCE]</h3>
+                </div>
+                
+                <div class="pixel-experience-item">
+                    <div class="pixel-job-header">
+                        <h4 class="pixel-job-title">CORE TEAM MEMBER</h4>
+                        <div class="pixel-company-info">
+                            <span class="pixel-company">
+                                <a href="https://x.com/TheTitan_DAO" target="_blank" rel="noopener noreferrer">
+                                    [T] TITANDAO
+                                </a>
+                            </span>
+                            <span class="pixel-date">2023 - PRESENT</span>
+                        </div>
+                    </div>
+                    <div class="pixel-achievements">
+                        <div class="pixel-achievement">• LEAD COMMUNITY MANAGEMENT AND STRATEGIC INITIATIVES FOR TITANDAO ECOSYSTEM</div>
+                        <div class="pixel-achievement">• COORDINATE WITH CORE TEAM ON GOVERNANCE DECISIONS AND COMMUNITY DEVELOPMENT</div>
+                        <div class="pixel-achievement">• MANAGE DISCORD SERVERS AND SOCIAL MEDIA PRESENCE FOR THE DAO</div>
+                        <div class="pixel-achievement">• FACILITATE COMMUNICATION BETWEEN DEVELOPERS, INVESTORS, AND COMMUNITY MEMBERS</div>
+                        <div class="pixel-achievement">• ORGANIZE COMMUNITY EVENTS, AMAS, AND EDUCATIONAL SESSIONS</div>
                     </div>
                 </div>
-                <div class="skill-category">
-                    <h4>Web3 & Trading</h4>
-                    <div class="skill-tags">
-                        <span class="skill-tag">Blockchain Fundamentals</span>
-                        <span class="skill-tag">DeFi Protocols</span>
-                        <span class="skill-tag">NFT Communities</span>
-                        <span class="skill-tag">DAO Governance</span>
-                        <span class="skill-tag">Alpha Hunting</span>
-                        <span class="skill-tag">Futures Trading</span>
-                        <span class="skill-tag">Technical Analysis</span>
-                        <span class="skill-tag">Risk Management</span>
-                        <span class="skill-tag">Market Analysis</span>
-                        <span class="skill-tag">Web3 Ecosystem</span>
+
+                <div class="pixel-experience-item">
+                    <div class="pixel-job-header">
+                        <h4 class="pixel-job-title">CO-FOUNDER</h4>
+                        <div class="pixel-company-info">
+                            <span class="pixel-company">
+                                <a href="https://x.com/Pixelizedao" target="_blank" rel="noopener noreferrer">
+                                    [T] PIXELIZEDAO
+                                </a>
+                                <a href="https://www.pixelizedao.xyz/" target="_blank" rel="noopener noreferrer" class="pixel-website-link">
+                                    [W] WEBSITE
+                                </a>
+                            </span>
+                            <span class="pixel-date">2023 - PRESENT</span>
+                        </div>
+                    </div>
+                    <div class="pixel-achievements">
+                        <div class="pixel-achievement">• CO-FOUNDED AND ESTABLISHED PIXELIZEDAO FROM CONCEPT TO ACTIVE COMMUNITY</div>
+                        <div class="pixel-achievement">• DEVELOPED GOVERNANCE STRUCTURE AND COMMUNITY GUIDELINES FOR THE DAO</div>
+                        <div class="pixel-achievement">• LEAD STRATEGIC PLANNING AND COMMUNITY GROWTH INITIATIVES</div>
+                        <div class="pixel-achievement">• MANAGE PARTNERSHIPS AND COLLABORATIONS WITH OTHER WEB3 PROJECTS</div>
+                        <div class="pixel-achievement">• COORDINATE WITH FOUNDING TEAM ON VISION AND ROADMAP EXECUTION</div>
                     </div>
                 </div>
-                <div class="skill-category">
-                    <h4>Web Development (Learning)</h4>
-                    <div class="skill-tags">
-                        <span class="skill-tag">HTML</span>
-                        <span class="skill-tag">CSS</span>
-                        <span class="skill-tag">JavaScript</span>
-                        <span class="skill-tag">React (Learning)</span>
-                        <span class="skill-tag">Node.js (Learning)</span>
-                        <span class="skill-tag">Git</span>
-                        <span class="skill-tag">GitHub</span>
-                        <span class="skill-tag">VS Code</span>
-                        <span class="skill-tag">Web3 Integration</span>
+
+                <div class="pixel-experience-item">
+                    <div class="pixel-job-header">
+                        <h4 class="pixel-job-title">COMMUNITY MANAGER & ALPHA HUNTER</h4>
+                        <div class="pixel-company-info">
+                            <span class="pixel-company">11+ DAOs</span>
+                            <span class="pixel-date">2021 - PRESENT</span>
+                        </div>
+                    </div>
+                    <div class="pixel-achievements">
+                        <div class="pixel-achievement">• MANAGE AND MODERATE COMMUNITIES ACROSS 11+ DIFFERENT DAOs AND WEB3 PROJECTS</div>
+                        <div class="pixel-achievement">• IDENTIFY AND ANALYZE ALPHA OPPORTUNITIES IN EMERGING WEB3 PROJECTS AND PROTOCOLS</div>
+                        <div class="pixel-achievement">• DEVELOP COMMUNITY GUIDELINES AND MODERATION POLICIES FOR DECENTRALIZED COMMUNITIES</div>
+                        <div class="pixel-achievement">• ORGANIZE COMMUNITY EVENTS, AMAS, AND EDUCATIONAL SESSIONS FOR BLOCKCHAIN PROJECTS</div>
+                        <div class="pixel-achievement">• PROVIDE STRATEGIC INSIGHTS AND MARKET ANALYSIS TO COMMUNITY MEMBERS</div>
                     </div>
                 </div>
-                <div class="skill-category">
-                    <h4>Soft Skills</h4>
-                    <div class="skill-tags">
-                        <span class="skill-tag">Communication</span>
-                        <span class="skill-tag">Leadership</span>
-                        <span class="skill-tag">Problem Solving</span>
-                        <span class="skill-tag">Team Collaboration</span>
-                        <span class="skill-tag">Customer Support</span>
-                        <span class="skill-tag">Event Planning</span>
-                        <span class="skill-tag">Conflict Resolution</span>
-                        <span class="skill-tag">Multilingual</span>
+
+                <div class="pixel-experience-item">
+                    <div class="pixel-job-header">
+                        <h4 class="pixel-job-title">FULL-TIME FUTURES TRADER</h4>
+                        <div class="pixel-company-info">
+                            <span class="pixel-company">SELF-EMPLOYED</span>
+                            <span class="pixel-date">2022 - PRESENT</span>
+                        </div>
+                    </div>
+                    <div class="pixel-achievements">
+                        <div class="pixel-achievement">• TRADE FUTURES MARKETS WITH FOCUS ON CRYPTO AND TRADITIONAL FINANCIAL INSTRUMENTS</div>
+                        <div class="pixel-achievement">• DEVELOP AND EXECUTE TRADING STRATEGIES BASED ON TECHNICAL AND FUNDAMENTAL ANALYSIS</div>
+                        <div class="pixel-achievement">• MANAGE RISK AND PORTFOLIO ALLOCATION ACROSS MULTIPLE ASSET CLASSES</div>
+                        <div class="pixel-achievement">• STAY CURRENT WITH MARKET TRENDS AND ECONOMIC INDICATORS</div>
+                        <div class="pixel-achievement">• APPLY TRADING INSIGHTS TO WEB3 PROJECT EVALUATION AND ALPHA HUNTING</div>
+                    </div>
+                </div>
+
+                <div class="pixel-experience-item">
+                    <div class="pixel-job-header">
+                        <h4 class="pixel-job-title">WEB DEVELOPMENT STUDENT</h4>
+                        <div class="pixel-company-info">
+                            <span class="pixel-company">SELF-LEARNING</span>
+                            <span class="pixel-date">2024 - PRESENT</span>
+                        </div>
+                    </div>
+                    <div class="pixel-achievements">
+                        <div class="pixel-achievement">• CURRENTLY LEARNING HTML, CSS, JAVASCRIPT, AND MODERN WEB DEVELOPMENT FRAMEWORKS</div>
+                        <div class="pixel-achievement">• BUILDING PERSONAL PROJECTS TO DEVELOP PRACTICAL CODING SKILLS</div>
+                        <div class="pixel-achievement">• STUDYING REACT, NODE.JS, AND WEB3 INTEGRATION FOR FUTURE DEVELOPMENT WORK</div>
+                        <div class="pixel-achievement">• CONTRIBUTING TO OPEN-SOURCE PROJECTS AND COLLABORATING WITH OTHER DEVELOPERS</div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Projects Section -->
-        <section class="section">
-            <h3 class="section-title">Community Projects & Learning</h3>
-            
-            <div class="project-item">
-                <div class="project-header">
-                    <h4 class="project-title">Web3 Community Management</h4>
-                    <span class="project-tech">Discord, Social Media, Event Planning</span>
+        <!-- Pixel Skills Section -->
+        <section class="pixel-section">
+            <div class="pixel-section-frame">
+                <div class="pixel-section-header">
+                    <h3 class="pixel-section-title">[TECHNICAL SKILLS]</h3>
                 </div>
-                <p class="project-description">
-                    Successfully managed multiple Web3 communities with 10,000+ combined members across Discord, 
-                    Telegram, and social media platforms. Organized AMAs, educational events, and community activities.
-                    <strong>Result:</strong> Increased community engagement by 300% and facilitated successful project launches.
-                </p>
-            </div>
-
-            <div class="project-item">
-                <div class="project-header">
-                    <h4 class="project-title">Personal Portfolio Website</h4>
-                    <span class="project-tech">HTML, CSS, JavaScript</span>
+                <div class="pixel-skills-grid">
+                    <div class="pixel-skill-category">
+                        <h4 class="pixel-skill-title">COMMUNITY MANAGEMENT</h4>
+                        <div class="pixel-skill-tags">
+                            <span class="pixel-skill-tag">DISCORD ADMIN</span>
+                            <span class="pixel-skill-tag">MODERATION</span>
+                            <span class="pixel-skill-tag">EVENT ORG</span>
+                            <span class="pixel-skill-tag">SOCIAL MEDIA</span>
+                            <span class="pixel-skill-tag">CONTENT CREATION</span>
+                            <span class="pixel-skill-tag">BOT INTEGRATION</span>
+                            <span class="pixel-skill-tag">ROLE MANAGEMENT</span>
+                            <span class="pixel-skill-tag">COMMUNITY GUIDES</span>
+                            <span class="pixel-skill-tag">DAO GOVERNANCE</span>
+                            <span class="pixel-skill-tag">STRATEGIC PLANNING</span>
+                        </div>
+                    </div>
+                    <div class="pixel-skill-category">
+                        <h4 class="pixel-skill-title">WEB3 & TRADING</h4>
+                        <div class="pixel-skill-tags">
+                            <span class="pixel-skill-tag">BLOCKCHAIN</span>
+                            <span class="pixel-skill-tag">DEFI PROTOCOLS</span>
+                            <span class="pixel-skill-tag">NFT COMMUNITIES</span>
+                            <span class="pixel-skill-tag">DAO GOVERNANCE</span>
+                            <span class="pixel-skill-tag">ALPHA HUNTING</span>
+                            <span class="pixel-skill-tag">FUTURES TRADING</span>
+                            <span class="pixel-skill-tag">TECHNICAL ANALYSIS</span>
+                            <span class="pixel-skill-tag">RISK MANAGEMENT</span>
+                            <span class="pixel-skill-tag">MARKET ANALYSIS</span>
+                            <span class="pixel-skill-tag">WEB3 ECOSYSTEM</span>
+                        </div>
+                    </div>
+                    <div class="pixel-skill-category">
+                        <h4 class="pixel-skill-title">WEB DEVELOPMENT (LEARNING)</h4>
+                        <div class="pixel-skill-tags">
+                            <span class="pixel-skill-tag">HTML</span>
+                            <span class="pixel-skill-tag">CSS</span>
+                            <span class="pixel-skill-tag">JAVASCRIPT</span>
+                            <span class="pixel-skill-tag">REACT (LEARNING)</span>
+                            <span class="pixel-skill-tag">NODE.JS (LEARNING)</span>
+                            <span class="pixel-skill-tag">GIT</span>
+                            <span class="pixel-skill-tag">GITHUB</span>
+                            <span class="pixel-skill-tag">VS CODE</span>
+                            <span class="pixel-skill-tag">WEB3 INTEGRATION</span>
+                        </div>
+                    </div>
+                    <div class="pixel-skill-category">
+                        <h4 class="pixel-skill-title">SOFT SKILLS</h4>
+                        <div class="pixel-skill-tags">
+                            <span class="pixel-skill-tag">COMMUNICATION</span>
+                            <span class="pixel-skill-tag">LEADERSHIP</span>
+                            <span class="pixel-skill-tag">PROBLEM SOLVING</span>
+                            <span class="pixel-skill-tag">TEAM COLLAB</span>
+                            <span class="pixel-skill-tag">CUSTOMER SUPPORT</span>
+                            <span class="pixel-skill-tag">EVENT PLANNING</span>
+                            <span class="pixel-skill-tag">CONFLICT RESOLUTION</span>
+                            <span class="pixel-skill-tag">MULTILINGUAL</span>
+                        </div>
+                    </div>
                 </div>
-                <p class="project-description">
-                    Built a responsive personal portfolio website showcasing community management experience and 
-                    current learning progress in web development. Implemented modern design principles and interactive features.
-                    <strong>Result:</strong> Created professional online presence and demonstrated coding skills.
-                </p>
-            </div>
-
-            <div class="project-item">
-                <div class="project-header">
-                    <h4 class="project-title">Discord Bot Development (Learning)</h4>
-                    <span class="project-tech">JavaScript, Discord.js, Node.js</span>
-                </div>
-                <p class="project-description">
-                    Currently learning to develop Discord bots for community automation and moderation. 
-                    Studying JavaScript and Node.js to create useful tools for Web3 communities.
-                    <strong>Goal:</strong> Combine community management expertise with technical development skills.
-                </p>
             </div>
         </section>
 
-        <!-- Certifications Section -->
-        <section class="section">
-            <h3 class="section-title">Certifications & Achievements</h3>
-            <div class="certification-item">
-                <h4 class="certification-name">Community Management Certification</h4>
-                <span class="certification-issuer">Discord Community</span>
-                <span class="certification-date">2023</span>
-            </div>
-            <div class="certification-item">
-                <h4 class="certification-name">Web Development Fundamentals</h4>
-                <span class="certification-issuer">FreeCodeCamp</span>
-                <span class="certification-date">2024</span>
-            </div>
-            <div class="certification-item">
-                <h4 class="certification-name">Blockchain & Web3 Fundamentals</h4>
-                <span class="certification-issuer">Coursera</span>
-                <span class="certification-date">2023</span>
+        <!-- Pixel Projects Section -->
+        <section class="pixel-section">
+            <div class="pixel-section-frame">
+                <div class="pixel-section-header">
+                    <h3 class="pixel-section-title">[COMMUNITY PROJECTS & LEARNING]</h3>
+                </div>
+                
+                <div class="pixel-project-item">
+                    <div class="pixel-project-header">
+                        <h4 class="pixel-project-title">WEB3 COMMUNITY MANAGEMENT</h4>
+                        <span class="pixel-project-tech">DISCORD, SOCIAL MEDIA, EVENT PLANNING</span>
+                    </div>
+                    <div class="pixel-project-description">
+                        SUCCESSFULLY MANAGED MULTIPLE WEB3 COMMUNITIES WITH 10,000+ COMBINED MEMBERS 
+                        ACROSS DISCORD, TELEGRAM, AND SOCIAL MEDIA PLATFORMS. ORGANIZED AMAS, 
+                        EDUCATIONAL EVENTS, AND COMMUNITY ACTIVITIES. RESULT: INCREASED COMMUNITY 
+                        ENGAGEMENT BY 300% AND FACILITATED SUCCESSFUL PROJECT LAUNCHES.
+                    </div>
+                </div>
+
+                <div class="pixel-project-item">
+                    <div class="pixel-project-header">
+                        <h4 class="pixel-project-title">PERSONAL PORTFOLIO WEBSITE</h4>
+                        <span class="pixel-project-tech">HTML, CSS, JAVASCRIPT</span>
+                    </div>
+                    <div class="pixel-project-description">
+                        BUILT A RESPONSIVE PERSONAL PORTFOLIO WEBSITE SHOWCASING COMMUNITY MANAGEMENT 
+                        EXPERIENCE AND CURRENT LEARNING PROGRESS IN WEB DEVELOPMENT. IMPLEMENTED 
+                        MODERN DESIGN PRINCIPLES AND INTERACTIVE FEATURES. RESULT: CREATED PROFESSIONAL 
+                        ONLINE PRESENCE AND DEMONSTRATED CODING SKILLS.
+                    </div>
+                </div>
+
+                <div class="pixel-project-item">
+                    <div class="pixel-project-header">
+                        <h4 class="pixel-project-title">DISCORD BOT DEVELOPMENT (LEARNING)</h4>
+                        <span class="pixel-project-tech">JAVASCRIPT, DISCORD.JS, NODE.JS</span>
+                    </div>
+                    <div class="pixel-project-description">
+                        CURRENTLY LEARNING TO DEVELOP DISCORD BOTS FOR COMMUNITY AUTOMATION AND 
+                        MODERATION. STUDYING JAVASCRIPT AND NODE.JS TO CREATE USEFUL TOOLS FOR 
+                        WEB3 COMMUNITIES. GOAL: COMBINE COMMUNITY MANAGEMENT EXPERTISE WITH 
+                        TECHNICAL DEVELOPMENT SKILLS.
+                    </div>
+                </div>
             </div>
         </section>
 
-        <!-- Community & Open Source -->
-        <section class="section">
-            <h3 class="section-title">Community & Open Source</h3>
-            <div class="community-item">
-                <h4 class="community-title">Web3 Community Leader</h4>
-                <p class="community-description">
-                    Led and moderated multiple Web3 communities, helping projects build engaged user bases. 
-                    Organized educational events and AMAs to bridge the gap between developers and community members.
-                </p>
-            </div>
-            <div class="community-item">
-                <h4 class="community-title">Learning & Growth</h4>
-                <p class="community-description">
-                    Actively learning web development to expand technical skills and contribute to open-source projects. 
-                    Sharing knowledge and experiences with other community managers and aspiring developers.
-                </p>
+        <!-- Pixel Certifications Section -->
+        <section class="pixel-section">
+            <div class="pixel-section-frame">
+                <div class="pixel-section-header">
+                    <h3 class="pixel-section-title">[CERTIFICATIONS & ACHIEVEMENTS]</h3>
+                </div>
+                <div class="pixel-certification-item">
+                    <h4 class="pixel-certification-name">COMMUNITY MANAGEMENT CERTIFICATION</h4>
+                    <span class="pixel-certification-issuer">DISCORD COMMUNITY</span>
+                    <span class="pixel-certification-date">2023</span>
+                </div>
+                <div class="pixel-certification-item">
+                    <h4 class="pixel-certification-name">WEB DEVELOPMENT FUNDAMENTALS</h4>
+                    <span class="pixel-certification-issuer">FREECODECAMP</span>
+                    <span class="pixel-certification-date">2024</span>
+                </div>
+                <div class="pixel-certification-item">
+                    <h4 class="pixel-certification-name">BLOCKCHAIN & WEB3 FUNDAMENTALS</h4>
+                    <span class="pixel-certification-issuer">COURSERA</span>
+                    <span class="pixel-certification-date">2023</span>
+                </div>
             </div>
         </section>
 
+        <!-- Pixel Community Section -->
+        <section class="pixel-section">
+            <div class="pixel-section-frame">
+                <div class="pixel-section-header">
+                    <h3 class="pixel-section-title">[COMMUNITY & OPEN SOURCE]</h3>
+                </div>
+                <div class="pixel-community-item">
+                    <h4 class="pixel-community-title">WEB3 COMMUNITY LEADER</h4>
+                    <div class="pixel-community-description">
+                        LED AND MODERATED MULTIPLE WEB3 COMMUNITIES, HELPING PROJECTS BUILD ENGAGED 
+                        USER BASES. ORGANIZED EDUCATIONAL EVENTS AND AMAS TO BRIDGE THE GAP BETWEEN 
+                        DEVELOPERS AND COMMUNITY MEMBERS.
+                    </div>
+                </div>
+                <div class="pixel-community-item">
+                    <h4 class="pixel-community-title">LEARNING & GROWTH</h4>
+                    <div class="pixel-community-description">
+                        ACTIVELY LEARNING WEB DEVELOPMENT TO EXPAND TECHNICAL SKILLS AND CONTRIBUTE 
+                        TO OPEN-SOURCE PROJECTS. SHARING KNOWLEDGE AND EXPERIENCES WITH OTHER 
+                        COMMUNITY MANAGERS AND ASPIRING DEVELOPERS.
+                    </div>
+                </div>
+            </div>
+        </section>
 
     </div>
 
     <script src="script.js"></script>
 </body>
-</html> 
+</html>

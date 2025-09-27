@@ -1,7 +1,7 @@
-// Advanced Web3 Resume Interactive Features
+// Pixel Art Resume - Retro Gaming Interactive Features
 document.addEventListener('DOMContentLoaded', function() {
     
-    // Loading screen functionality
+    // Pixel Loading screen functionality
     const loadingScreen = document.getElementById('loadingScreen');
     const mainContent = document.getElementById('mainContent');
     
@@ -18,10 +18,13 @@ document.addEventListener('DOMContentLoaded', function() {
             // Hide loading screen completely
             loadingScreen.style.display = 'none';
             
-            // Show main content
+            // Show main content with pixel effect
             mainContent.style.display = 'block';
             mainContent.style.opacity = '1';
             mainContent.style.transform = 'translateY(0)';
+            
+            // Add pixel scan effect
+            addPixelScanEffect();
         }, 500);
     }, 3500); // Show loading for 3.5 seconds
     
@@ -34,55 +37,59 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }, 5000); // Fallback after 5 seconds
     
-    // Add smooth scrolling for any anchor links
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener('click', function (e) {
-            e.preventDefault();
-            const target = document.querySelector(this.getAttribute('href'));
-            if (target) {
-                target.scrollIntoView({
-                    behavior: 'smooth',
-                    block: 'start'
-                });
-            }
-        });
-    });
-
-    // Ultra-enhanced print functionality with advanced styling
-    function addPrintButton() {
+    // Pixel scan effect for main content
+    function addPixelScanEffect() {
+        const scanLine = document.createElement('div');
+        scanLine.style.cssText = `
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background: linear-gradient(90deg, transparent, #00ff00, transparent);
+            z-index: 10000;
+            animation: pixelScan 2s ease-in-out;
+            pointer-events: none;
+        `;
+        document.body.appendChild(scanLine);
+        
+        setTimeout(() => {
+            document.body.removeChild(scanLine);
+        }, 2000);
+    }
+    
+    // Add pixel-style print button
+    function addPixelPrintButton() {
         const printBtn = document.createElement('button');
-        printBtn.innerHTML = '<i class="fas fa-print"></i> Print Resume';
-        printBtn.className = 'print-button';
+        printBtn.innerHTML = '[PRINT]';
+        printBtn.className = 'pixel-print-button';
         printBtn.style.cssText = `
             position: fixed;
-            top: 25px;
-            right: 25px;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-            border: none;
-            padding: 16px 28px;
-            border-radius: 35px;
-            font-family: 'Inter', sans-serif;
-            font-weight: 700;
-            font-size: 0.95rem;
+            top: 20px;
+            right: 20px;
+            background: #000000;
+            color: #00ff00;
+            border: 2px solid #00ff00;
+            padding: 10px 20px;
+            font-family: 'Press Start 2P', monospace;
+            font-size: 8px;
             cursor: pointer;
-            box-shadow: 0 12px 32px rgba(102, 126, 234, 0.4);
-            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
             z-index: 1000;
-            border: 2px solid rgba(255, 255, 255, 0.2);
-            transform: translateZ(0);
+            box-shadow: 0 0 10px #00ff00;
+            transition: all 0.3s ease;
+            image-rendering: pixelated;
         `;
         
         printBtn.addEventListener('mouseenter', function() {
-            this.style.transform = 'translateY(-4px) scale(1.05) translateZ(0)';
-            this.style.boxShadow = '0 16px 40px rgba(102, 126, 234, 0.5)';
-            this.style.background = 'linear-gradient(135deg, #764ba2 0%, #667eea 100%)';
+            this.style.background = '#00ff00';
+            this.style.color = '#000000';
+            this.style.boxShadow = '0 0 20px #00ff00';
         });
         
         printBtn.addEventListener('mouseleave', function() {
-            this.style.transform = 'translateY(0) scale(1) translateZ(0)';
-            this.style.boxShadow = '0 12px 32px rgba(102, 126, 234, 0.4)';
-            this.style.background = 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)';
+            this.style.background = '#000000';
+            this.style.color = '#00ff00';
+            this.style.boxShadow = '0 0 10px #00ff00';
         });
         
         printBtn.addEventListener('click', function() {
@@ -95,178 +102,183 @@ document.addEventListener('DOMContentLoaded', function() {
         
         document.body.appendChild(printBtn);
     }
-
-    // Simple skill tag hover effects
-    function addSkillHoverEffects() {
-        const skillTags = document.querySelectorAll('.skill-tag');
+    
+    // Pixel-style skill tag hover effects
+    function addPixelSkillEffects() {
+        const skillTags = document.querySelectorAll('.pixel-skill-tag');
         skillTags.forEach(tag => {
             tag.addEventListener('mouseenter', function() {
-                this.style.transform = 'translateY(-2px)';
-                this.style.boxShadow = '0 6px 16px rgba(102, 126, 234, 0.4)';
+                this.style.transform = 'scale(1.1)';
+                this.style.boxShadow = '0 0 15px #00ff00';
+                this.style.background = '#00ff00';
+                this.style.color = '#000000';
             });
             
             tag.addEventListener('mouseleave', function() {
-                this.style.transform = 'translateY(0)';
-                this.style.boxShadow = '0 4px 12px rgba(102, 126, 234, 0.3)';
+                this.style.transform = 'scale(1)';
+                this.style.boxShadow = 'none';
+                this.style.background = '#000000';
+                this.style.color = '#00ffff';
             });
         });
     }
-
-    // Simple section animations
-    function addSectionAnimations() {
-        const sections = document.querySelectorAll('.section');
+    
+    // Pixel-style section animations
+    function addPixelSectionAnimations() {
+        const sections = document.querySelectorAll('.pixel-section');
         const observer = new IntersectionObserver((entries) => {
             entries.forEach((entry) => {
                 if (entry.isIntersecting) {
                     entry.target.style.opacity = '1';
                     entry.target.style.transform = 'translateY(0)';
+                    
+                    // Add pixel glow effect
+                    entry.target.style.boxShadow = '0 0 20px #00ff00';
+                    setTimeout(() => {
+                        entry.target.style.boxShadow = 'inset 0 0 20px rgba(0, 255, 0, 0.1)';
+                    }, 1000);
                 }
             });
         }, {
             threshold: 0.1,
-            rootMargin: '0px 0px -100px 0px'
+            rootMargin: '0px 0px -50px 0px'
         });
 
         sections.forEach((section, index) => {
             section.style.opacity = '0';
-            section.style.transform = 'translateY(40px) translateZ(0)';
-            section.style.transition = `opacity 1s ease ${index * 0.2}s, transform 1s ease ${index * 0.2}s`;
+            section.style.transform = 'translateY(20px)';
+            section.style.transition = `opacity 0.8s ease ${index * 0.2}s, transform 0.8s ease ${index * 0.2}s`;
             observer.observe(section);
         });
     }
-
-    // Advanced experience item hover effects with 3D transforms
-    function addExperienceHoverEffects() {
-        const experienceItems = document.querySelectorAll('.experience-item, .project-item, .certification-item, .community-item');
+    
+    // Pixel-style experience item hover effects
+    function addPixelExperienceEffects() {
+        const experienceItems = document.querySelectorAll('.pixel-experience-item, .pixel-project-item, .pixel-certification-item, .pixel-community-item');
         experienceItems.forEach(item => {
             item.addEventListener('mouseenter', function() {
-                this.style.transform = 'translateY(-8px) translateZ(0) rotateX(2deg)';
-                this.style.boxShadow = '0 20px 48px rgba(0, 0, 0, 0.15)';
-                this.style.borderColor = 'rgba(102, 126, 234, 0.3)';
+                this.style.transform = 'translateY(-5px)';
+                this.style.boxShadow = '0 0 25px #00ff00';
+                this.style.borderColor = '#00ffff';
             });
             
             item.addEventListener('mouseleave', function() {
-                this.style.transform = 'translateY(0) translateZ(0) rotateX(0deg)';
-                this.style.boxShadow = '0 8px 24px rgba(0, 0, 0, 0.08)';
-                this.style.borderColor = 'rgba(0, 0, 0, 0.05)';
+                this.style.transform = 'translateY(0)';
+                this.style.boxShadow = 'none';
+                this.style.borderColor = '#00ff00';
             });
         });
     }
-
-    // Advanced typing effect with cursor animation
-    function addTypingEffect() {
-        const nameElement = document.querySelector('.name');
+    
+    // Pixel-style typing effect for name
+    function addPixelTypingEffect() {
+        const nameElement = document.querySelector('.pixel-name');
         if (nameElement) {
             const originalText = nameElement.textContent;
             nameElement.textContent = '';
-            nameElement.style.borderRight = '4px solid #667eea';
-            nameElement.style.animation = 'blink 1s infinite';
+            nameElement.style.borderRight = '4px solid #00ff00';
+            nameElement.style.animation = 'pixelBlink 1s infinite';
             
             let i = 0;
             const typeWriter = () => {
                 if (i < originalText.length) {
                     nameElement.textContent += originalText.charAt(i);
                     i++;
-                    setTimeout(typeWriter, 120);
+                    setTimeout(typeWriter, 150);
                 } else {
                     nameElement.style.borderRight = 'none';
                     nameElement.style.animation = 'none';
                 }
             };
             
-            setTimeout(typeWriter, 800);
+            setTimeout(typeWriter, 1000);
         }
     }
-
-    // Advanced particle effect with multiple layers
-    function addParticleEffect() {
-        const header = document.querySelector('.header');
+    
+    // Pixel-style particle effect
+    function addPixelParticleEffect() {
+        const header = document.querySelector('.pixel-header');
         if (header) {
-            // Create multiple particle layers
-            for (let layer = 0; layer < 3; layer++) {
-                for (let i = 0; i < 15; i++) {
-                    const particle = document.createElement('div');
-                    const size = 2 + layer * 1;
-                    const speed = 8 + layer * 2;
-                    const delay = Math.random() * speed;
-                    
-                    particle.style.cssText = `
-                        position: absolute;
-                        width: ${size}px;
-                        height: ${size}px;
-                        background: rgba(255, 255, 255, ${0.2 + layer * 0.1});
-                        border-radius: 50%;
-                        pointer-events: none;
-                        animation: float${layer + 1} ${speed}s ease-in-out infinite;
-                        animation-delay: ${delay}s;
-                        z-index: ${layer};
-                    `;
-                    particle.style.left = Math.random() * 100 + '%';
-                    particle.style.top = Math.random() * 100 + '%';
-                    header.appendChild(particle);
-                }
+            for (let i = 0; i < 20; i++) {
+                const particle = document.createElement('div');
+                const size = Math.random() * 3 + 1;
+                const speed = Math.random() * 3 + 2;
+                const delay = Math.random() * speed;
+                
+                particle.style.cssText = `
+                    position: absolute;
+                    width: ${size}px;
+                    height: ${size}px;
+                    background: #00ff00;
+                    pointer-events: none;
+                    animation: pixelFloat ${speed}s ease-in-out infinite;
+                    animation-delay: ${delay}s;
+                    z-index: 1;
+                    image-rendering: pixelated;
+                `;
+                particle.style.left = Math.random() * 100 + '%';
+                particle.style.top = Math.random() * 100 + '%';
+                header.appendChild(particle);
             }
         }
     }
-
-    // Add advanced CSS animations
+    
+    // Add pixel-style CSS animations
     const style = document.createElement('style');
     style.textContent = `
-        @keyframes blink {
-            0%, 50% { border-color: #667eea; }
-            51%, 100% { border-color: transparent; }
+        @keyframes pixelFloat {
+            0%, 100% { 
+                transform: translateY(0px) rotate(0deg); 
+                opacity: 0; 
+            }
+            50% { 
+                transform: translateY(-30px) rotate(180deg); 
+                opacity: 1; 
+            }
         }
         
-        @keyframes float1 {
-            0%, 100% { transform: translateY(0px) rotate(0deg); opacity: 0; }
-            50% { transform: translateY(-25px) rotate(180deg); opacity: 1; }
+        @keyframes pixelGlow {
+            0%, 100% { 
+                box-shadow: 0 0 5px #00ff00; 
+            }
+            50% { 
+                box-shadow: 0 0 20px #00ff00, 0 0 30px #00ff00; 
+            }
         }
         
-        @keyframes float2 {
-            0%, 100% { transform: translateY(0px) rotate(0deg) scale(1); opacity: 0; }
-            50% { transform: translateY(-30px) rotate(360deg) scale(1.2); opacity: 0.8; }
+        @keyframes pixelFlicker {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.7; }
         }
         
-        @keyframes float3 {
-            0%, 100% { transform: translateY(0px) rotate(0deg) scale(1); opacity: 0; }
-            50% { transform: translateY(-20px) rotate(-180deg) scale(0.8); opacity: 0.6; }
+        @keyframes pixelScan {
+            0% { transform: translateY(-100vh); }
+            100% { transform: translateY(100vh); }
         }
         
-        @keyframes glow {
-            0%, 100% { box-shadow: 0 0 5px rgba(102, 126, 234, 0.5); }
-            50% { box-shadow: 0 0 20px rgba(102, 126, 234, 0.8); }
-        }
-        
-        @keyframes slideInFromLeft {
-            from { transform: translateX(-100px); opacity: 0; }
-            to { transform: translateX(0); opacity: 1; }
-        }
-        
-        @keyframes slideInFromRight {
-            from { transform: translateX(100px); opacity: 0; }
-            to { transform: translateX(0); opacity: 1; }
-        }
-        
-        @keyframes bounce {
-            0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
-            40% { transform: translateY(-10px); }
-            60% { transform: translateY(-5px); }
+        @keyframes pixelBorder {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
         }
     `;
     document.head.appendChild(style);
-
-    // Enhanced contact info click handlers with advanced feedback
-    function addContactHandlers() {
-        document.querySelectorAll('.contact-item').forEach(item => {
+    
+    // Pixel-style contact handlers
+    function addPixelContactHandlers() {
+        document.querySelectorAll('.pixel-contact-item').forEach(item => {
             item.style.cursor = 'pointer';
             item.addEventListener('click', function(e) {
-                const text = this.querySelector('span').textContent;
-                const icon = this.querySelector('i');
+                const text = this.querySelector('span:last-child').textContent;
+                const icon = this.querySelector('.pixel-icon');
                 
-                // Add click animation
+                // Add pixel click animation
                 this.style.transform = 'scale(0.95)';
+                this.style.background = '#00ff00';
+                this.style.color = '#000000';
                 setTimeout(() => {
                     this.style.transform = 'scale(1)';
+                    this.style.background = 'rgba(0, 255, 0, 0.1)';
+                    this.style.color = '#00ff00';
                 }, 150);
                 
                 // Email
@@ -278,19 +290,15 @@ document.addEventListener('DOMContentLoaded', function() {
                     window.open(`https://${text}`, '_blank');
                 }
                 // Twitter/X
-                else if (text.startsWith('@') || icon.classList.contains('fa-twitter')) {
+                else if (text.startsWith('@') || icon.textContent.includes('T')) {
                     const handle = text.startsWith('@') ? text : `@${text}`;
                     window.open(`https://twitter.com/${handle.substring(1)}`, '_blank');
                 }
                 // Discord
-                else if (icon.classList.contains('fa-discord')) {
+                else if (icon.textContent.includes('D')) {
                     navigator.clipboard.writeText(text).then(() => {
-                        showNotification(`Discord handle "${text}" copied to clipboard!`, 'success');
+                        showPixelNotification(`DISCORD HANDLE "${text}" COPIED TO CLIPBOARD!`, 'success');
                     });
-                }
-                // Phone
-                else if (text.includes('+') || text.includes('(')) {
-                    window.location.href = `tel:${text.replace(/\s/g, '')}`;
                 }
                 // Website
                 else if (text.includes('.com') || text.includes('.io')) {
@@ -299,47 +307,39 @@ document.addEventListener('DOMContentLoaded', function() {
             });
         });
     }
-
-    // Advanced notification system
-    function showNotification(message, type = 'info') {
+    
+    // Pixel-style notification system
+    function showPixelNotification(message, type = 'info') {
         const notification = document.createElement('div');
         notification.style.cssText = `
             position: fixed;
             top: 20px;
             left: 50%;
             transform: translateX(-50%);
-            background: ${type === 'success' ? 'linear-gradient(135deg, #4CAF50 0%, #45a049 100%)' : 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)'};
-            color: white;
-            padding: 16px 24px;
-            border-radius: 12px;
-            font-family: 'Inter', sans-serif;
-            font-weight: 600;
-            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+            background: #000000;
+            color: ${type === 'success' ? '#00ff00' : '#00ffff'};
+            border: 2px solid ${type === 'success' ? '#00ff00' : '#00ffff'};
+            padding: 15px 25px;
+            font-family: 'Press Start 2P', monospace;
+            font-size: 8px;
+            box-shadow: 0 0 20px ${type === 'success' ? '#00ff00' : '#00ffff'};
             z-index: 10000;
-            animation: slideInFromTop 0.3s ease;
+            animation: pixelSlideIn 0.3s ease;
+            image-rendering: pixelated;
         `;
         notification.textContent = message;
         document.body.appendChild(notification);
         
         setTimeout(() => {
-            notification.style.animation = 'slideOutToTop 0.3s ease';
+            notification.style.animation = 'pixelSlideOut 0.3s ease';
             setTimeout(() => {
                 document.body.removeChild(notification);
             }, 300);
         }, 3000);
     }
-
-    // Advanced skill tag counter animation with staggered effects
-    function addSkillCounter() {
-        const skillTags = document.querySelectorAll('.skill-tag');
-        skillTags.forEach((tag, index) => {
-            tag.style.animationDelay = `${index * 0.1}s`;
-            tag.style.animationDuration = '0.8s';
-        });
-    }
-
-    // Advanced scroll progress indicator with gradient
-    function addScrollProgress() {
+    
+    // Pixel-style scroll progress indicator
+    function addPixelScrollProgress() {
         const progressBar = document.createElement('div');
         progressBar.style.cssText = `
             position: fixed;
@@ -347,10 +347,11 @@ document.addEventListener('DOMContentLoaded', function() {
             left: 0;
             width: 0%;
             height: 4px;
-            background: linear-gradient(90deg, #667eea 0%, #764ba2 50%, #f093fb 100%);
+            background: linear-gradient(90deg, #00ff00 0%, #00ffff 50%, #ff00ff 100%);
             z-index: 1001;
             transition: width 0.1s ease;
-            box-shadow: 0 2px 8px rgba(102, 126, 234, 0.3);
+            box-shadow: 0 2px 8px #00ff00;
+            image-rendering: pixelated;
         `;
         document.body.appendChild(progressBar);
 
@@ -359,41 +360,40 @@ document.addEventListener('DOMContentLoaded', function() {
             progressBar.style.width = scrolled + '%';
         });
     }
-
-    // Simple hover effects for section titles
-    function addSectionTitleEffects() {
-        const sectionTitles = document.querySelectorAll('.section-title');
+    
+    // Pixel-style section title effects
+    function addPixelSectionTitleEffects() {
+        const sectionTitles = document.querySelectorAll('.pixel-section-title');
         sectionTitles.forEach(title => {
             title.addEventListener('mouseenter', function() {
-                this.style.color = '#667eea';
+                this.style.color = '#00ffff';
+                this.style.textShadow = '0 0 10px #00ffff';
             });
             
             title.addEventListener('mouseleave', function() {
-                this.style.color = '#1a1a1a';
+                this.style.color = '#00ff00';
+                this.style.textShadow = '2px 2px 0px #000000';
             });
         });
     }
-
-
-
-    // Initialize all features
-    addPrintButton();
-    addSkillHoverEffects();
-    addSectionAnimations();
-    addExperienceHoverEffects();
-    addTypingEffect();
-    addParticleEffect();
-    addContactHandlers();
-    addSkillCounter();
-    addScrollProgress();
-    addSectionTitleEffects();
-
-    // Advanced keyboard shortcuts with visual feedback
+    
+    // Initialize all pixel features
+    addPixelPrintButton();
+    addPixelSkillEffects();
+    addPixelSectionAnimations();
+    addPixelExperienceEffects();
+    addPixelTypingEffect();
+    addPixelParticleEffect();
+    addPixelContactHandlers();
+    addPixelScrollProgress();
+    addPixelSectionTitleEffects();
+    
+    // Pixel-style keyboard shortcuts
     document.addEventListener('keydown', function(e) {
         // Ctrl/Cmd + P for print
         if ((e.ctrlKey || e.metaKey) && e.key === 'p') {
             e.preventDefault();
-            showNotification('Printing resume...', 'info');
+            showPixelNotification('PRINTING RESUME...', 'info');
             setTimeout(() => window.print(), 500);
         }
         // Escape to close any open modals
@@ -401,59 +401,101 @@ document.addEventListener('DOMContentLoaded', function() {
             // Close any open modals or notifications
         }
     });
-
-    // Simple loading animation
+    
+    // Pixel-style loading animation
     window.addEventListener('load', function() {
         document.body.style.opacity = '0';
         document.body.style.transition = 'opacity 0.5s ease';
         
         setTimeout(() => {
             document.body.style.opacity = '1';
-            showNotification('Resume loaded successfully! 🎉', 'success');
+            showPixelNotification('RESUME LOADED SUCCESSFULLY! [OK]', 'success');
         }, 300);
     });
-
-    // Advanced intersection observer for skill tags with enhanced animations
+    
+    // Add pixel-style CSS for advanced animations
+    const advancedStyle = document.createElement('style');
+    advancedStyle.textContent = `
+        @keyframes pixelSlideIn {
+            from { 
+                transform: translateX(-50%) translateY(-100px); 
+                opacity: 0; 
+            }
+            to { 
+                transform: translateX(-50%) translateY(0); 
+                opacity: 1; 
+            }
+        }
+        
+        @keyframes pixelSlideOut {
+            from { 
+                transform: translateX(-50%) translateY(0); 
+                opacity: 1; 
+            }
+            to { 
+                transform: translateX(-50%) translateY(-100px); 
+                opacity: 0; 
+            }
+        }
+        
+        .pixel-contact-item:hover .pixel-icon {
+            animation: pixelGlow 0.5s ease;
+        }
+        
+        .pixel-skill-tag:hover {
+            animation: pixelFlicker 0.3s ease;
+        }
+        
+        .pixel-section:hover .pixel-section-title {
+            color: #00ffff;
+            transition: color 0.3s ease;
+        }
+        
+        .pixel-experience-item:hover::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 2px;
+            background: linear-gradient(90deg, transparent, #00ff00, transparent);
+            animation: pixelScan 1s ease;
+        }
+    `;
+    document.head.appendChild(advancedStyle);
+    
+    // Pixel-style intersection observer for skill tags
     const skillObserver = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
                 entry.target.style.animationPlayState = 'running';
-                entry.target.style.animation = 'bounce 0.6s ease';
+                entry.target.style.animation = 'pixelGlow 0.6s ease';
             }
         });
     }, { threshold: 0.5 });
 
-    document.querySelectorAll('.skill-tag').forEach(tag => {
+    document.querySelectorAll('.pixel-skill-tag').forEach(tag => {
         skillObserver.observe(tag);
     });
-
-    // Add CSS for advanced animations
-    const advancedStyle = document.createElement('style');
-    advancedStyle.textContent = `
-        @keyframes slideInFromTop {
-            from { transform: translateX(-50%) translateY(-100px); opacity: 0; }
-            to { transform: translateX(-50%) translateY(0); opacity: 1; }
-        }
-        
-        @keyframes slideOutToTop {
-            from { transform: translateX(-50%) translateY(0); opacity: 1; }
-            to { transform: translateX(-50%) translateY(-100px); opacity: 0; }
-        }
-        
-        .section:hover .section-title::before {
-            width: 100px;
-            transition: width 0.3s ease;
-        }
-        
-        .contact-item:hover i {
-            animation: bounce 0.6s ease;
-        }
-        
-        .skill-category:hover h4 {
-            color: #667eea;
-            transition: color 0.3s ease;
-        }
+    
+    // Add pixel-style cursor
+    document.body.style.cursor = 'url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'16\' height=\'16\' viewBox=\'0 0 16 16\'><rect width=\'16\' height=\'16\' fill=\'%2300ff00\'/></svg>") 8 8, auto';
+    
+    // Pixel-style background pattern
+    const backgroundPattern = document.createElement('div');
+    backgroundPattern.style.cssText = `
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: 
+            radial-gradient(circle at 25% 25%, rgba(0, 255, 0, 0.1) 0%, transparent 50%),
+            radial-gradient(circle at 75% 75%, rgba(0, 255, 255, 0.1) 0%, transparent 50%);
+        pointer-events: none;
+        z-index: -1;
+        animation: pixelFlicker 4s ease-in-out infinite;
     `;
-    document.head.appendChild(advancedStyle);
-
-}); 
+    document.body.appendChild(backgroundPattern);
+    
+});
