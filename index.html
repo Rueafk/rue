@@ -9,7 +9,22 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-    <div class="container">
+   <!-- Loading Screen -->
+   <div id="loadingScreen" class="loading-screen">
+       <div class="loading-content">
+                        <div class="loading-penguin">
+                            <img src="image/RueLoading.gif" alt="Loading..." style="width: 80px; height: 80px;">
+                        </div>
+                        <div class="loading-text">Thanks for your attention . . .</div>
+           <div class="loading-dots">
+               <span></span>
+               <span></span>
+               <span></span>
+           </div>
+       </div>
+   </div>
+
+   <div class="container" id="mainContent" style="display: none;">
         <!-- Header Section -->
         <header class="header">
             <div class="header-content">
@@ -262,8 +277,6 @@
             </div>
         </section>
 
-
-
         <!-- Certifications Section -->
         <section class="section">
             <h3 class="section-title">Certifications & Achievements</h3>
@@ -302,15 +315,8 @@
                 </p>
             </div>
         </section>
-    </div>
 
-        <!-- Print Button -->
-        <div class="print-button-container">
-            <button class="print-button" onclick="window.print()">
-                <i class="fas fa-print"></i>
-                <span>Print Resume</span>
-            </button>
-        </div>
+
     </div>
 
     <script src="script.js"></script>

@@ -1,6 +1,39 @@
 // Advanced Web3 Resume Interactive Features
 document.addEventListener('DOMContentLoaded', function() {
     
+    // Loading screen functionality
+    const loadingScreen = document.getElementById('loadingScreen');
+    const mainContent = document.getElementById('mainContent');
+    
+    // Show loading screen initially
+    loadingScreen.style.display = 'flex';
+    mainContent.style.display = 'none';
+    
+    // Simulate loading time and show content
+    setTimeout(() => {
+        // Hide loading screen
+        loadingScreen.style.opacity = '0';
+        
+        setTimeout(() => {
+            // Hide loading screen completely
+            loadingScreen.style.display = 'none';
+            
+            // Show main content
+            mainContent.style.display = 'block';
+            mainContent.style.opacity = '1';
+            mainContent.style.transform = 'translateY(0)';
+        }, 500);
+    }, 2000); // Show loading for 2 seconds
+    
+    // Fallback: If loading takes too long, show content anyway
+    setTimeout(() => {
+        if (loadingScreen.style.display !== 'none') {
+            loadingScreen.style.display = 'none';
+            mainContent.style.display = 'block';
+            mainContent.style.opacity = '1';
+        }
+    }, 5000); // Fallback after 5 seconds
+    
     // Add smooth scrolling for any anchor links
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
@@ -36,7 +69,6 @@ document.addEventListener('DOMContentLoaded', function() {
             box-shadow: 0 12px 32px rgba(102, 126, 234, 0.4);
             transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
             z-index: 1000;
-
             border: 2px solid rgba(255, 255, 255, 0.2);
             transform: translateZ(0);
         `;
@@ -328,10 +360,6 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
-
-
-
-
     // Simple hover effects for section titles
     function addSectionTitleEffects() {
         const sectionTitles = document.querySelectorAll('.section-title');
@@ -345,6 +373,8 @@ document.addEventListener('DOMContentLoaded', function() {
             });
         });
     }
+
+
 
     // Initialize all features
     addPrintButton();
@@ -364,12 +394,6 @@ document.addEventListener('DOMContentLoaded', function() {
         if ((e.ctrlKey || e.metaKey) && e.key === 'p') {
             e.preventDefault();
             showNotification('Printing resume...', 'info');
-            setTimeout(() => window.print(), 500);
-        }
-        // Ctrl/Cmd + S for save
-        if ((e.ctrlKey || e.metaKey) && e.key === 's') {
-            e.preventDefault();
-            showNotification('Saving as PDF...', 'info');
             setTimeout(() => window.print(), 500);
         }
         // Escape to close any open modals
@@ -431,6 +455,5 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     `;
     document.head.appendChild(advancedStyle);
-
 
 }); 
