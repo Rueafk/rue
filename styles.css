@@ -204,7 +204,7 @@ body {
     font-size: 32px;
     font-weight: normal;
     margin-bottom: 15px;
-    color: #569cd6;
+    color: #4fc1ff;
     text-shadow: 3px 3px 0px #000000;
     letter-spacing: 2px;
 }
@@ -220,7 +220,7 @@ body {
 .pixel-title {
     font-size: 14px;
     font-weight: normal;
-    color: #4fc1ff;
+    color: #ce9178;
     text-shadow: 2px 2px 0px #000000;
     line-height: 1.4;
 }
@@ -233,7 +233,7 @@ body {
 
 .pixel-stat {
     font-size: 12px;
-    color: #4ec9b0;
+    color: #b5cea8;
     text-shadow: 1px 1px 0px #000000;
 }
 
@@ -249,7 +249,7 @@ body {
 
 .pixel-panel-title {
     font-size: 14px;
-    color: #569cd6;
+    color: #c586c0;
     text-align: center;
     margin-bottom: 15px;
     text-shadow: 2px 2px 0px #000000;
@@ -283,7 +283,7 @@ body {
 }
 
 .pixel-icon {
-    color: #4fc1ff;
+    color: #569cd6;
     font-weight: bold;
     min-width: 30px;
 }
@@ -312,7 +312,7 @@ body {
 
 .pixel-section-title {
     font-size: 16px;
-    color: #569cd6;
+    color: #dcdcaa;
     text-shadow: 2px 2px 0px #000000;
     border-bottom: 2px solid #007acc;
     padding-bottom: 10px;
@@ -329,7 +329,7 @@ body {
 .pixel-summary {
     font-size: 12px;
     line-height: 1.8;
-    color: #ffffff;
+    color: #d4d4d4;
     text-shadow: 1px 1px 0px #000000;
     transition: all 0.3s ease;
 }
@@ -372,7 +372,7 @@ body {
 
 .pixel-job-title {
     font-size: 14px;
-    color: #3b82f6;
+    color: #4fc1ff;
     text-shadow: 2px 2px 0px #000000;
     flex: 1;
     min-width: 200px;
@@ -392,13 +392,13 @@ body {
 
 .pixel-company {
     font-size: 12px;
-    color: #06b6d4;
+    color: #ce9178;
     text-shadow: 1px 1px 0px #000000;
     transition: all 0.3s ease;
 }
 
 .pixel-company a {
-    color: #06b6d4;
+    color: #ce9178;
     text-decoration: none;
     transition: all 0.3s ease;
 }
@@ -421,10 +421,10 @@ body {
 
 .pixel-date {
     font-size: 10px;
-    color: #10b981;
-    background: rgba(59, 130, 246, 0.1);
+    color: #b5cea8;
+    background: rgba(0, 122, 204, 0.1);
     padding: 3px 8px;
-    border: 1px solid #3b82f6;
+    border: 1px solid #007acc;
     transition: all 0.3s ease;
 }
 
@@ -442,7 +442,7 @@ body {
 
 .pixel-achievement {
     font-size: 11px;
-    color: #ffffff;
+    color: #d4d4d4;
     text-shadow: 1px 1px 0px #000000;
     line-height: 1.6;
     padding-left: 10px;
@@ -454,7 +454,7 @@ body {
     content: '▶';
     position: absolute;
     left: 0;
-    color: #3b82f6;
+    color: #569cd6;
 }
 
 .pixel-experience-item:hover .pixel-achievement {
