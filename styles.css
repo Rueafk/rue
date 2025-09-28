@@ -807,16 +807,31 @@ body {
     .pixel-contact-panel {
         min-width: auto;
         width: 100%;
-        padding: 12px;
+        padding: 8px;
+        margin-top: 10px;
     }
     
     .pixel-contact-grid {
-        gap: 4px;
+        gap: 3px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 6px;
     }
     
     .pixel-contact-item {
-        font-size: 9px;
-        padding: 4px;
+        font-size: 8px;
+        padding: 6px 4px;
+        text-align: center;
+        min-height: 32px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .pixel-contact-item .pixel-icon {
+        font-size: 10px;
+        margin-bottom: 2px;
     }
     
     .pixel-summary {
@@ -861,15 +876,15 @@ body {
     }
     
     .pixel-header {
-        padding: 10px;
+        padding: 8px;
     }
     
     .pixel-header-frame {
-        gap: 10px;
+        gap: 8px;
     }
     
     .pixel-profile-section {
-        gap: 10px;
+        gap: 8px;
     }
     
     .pixel-avatar {
@@ -883,6 +898,32 @@ body {
     
     .pixel-title {
         font-size: 7px;
+    }
+    
+    .pixel-contact-panel {
+        padding: 6px;
+        margin-top: 8px;
+    }
+    
+    .pixel-contact-grid {
+        grid-template-columns: 1fr;
+        gap: 4px;
+    }
+    
+    .pixel-contact-item {
+        font-size: 7px;
+        padding: 4px 2px;
+        min-height: 28px;
+        flex-direction: row;
+        justify-content: flex-start;
+        text-align: left;
+    }
+    
+    .pixel-contact-item .pixel-icon {
+        font-size: 8px;
+        margin-right: 4px;
+        margin-bottom: 0;
+        min-width: 20px;
     }
     
     .pixel-section {
@@ -1006,6 +1047,23 @@ body {
         height: 50px;
     }
     
+    .pixel-contact-panel {
+        padding: 4px;
+        margin-top: 6px;
+    }
+    
+    .pixel-contact-item {
+        font-size: 6px;
+        padding: 3px 1px;
+        min-height: 24px;
+    }
+    
+    .pixel-contact-item .pixel-icon {
+        font-size: 7px;
+        margin-right: 3px;
+        min-width: 18px;
+    }
+    
     .pixel-skill-tag {
         padding: 1px 2px;
         font-size: 3px;
@@ -1085,6 +1143,23 @@ body {
     .pixel-avatar {
         width: 40px;
         height: 40px;
+    }
+    
+    .pixel-contact-panel {
+        padding: 3px;
+        margin-top: 4px;
+    }
+    
+    .pixel-contact-item {
+        font-size: 5px;
+        padding: 2px 1px;
+        min-height: 20px;
+    }
+    
+    .pixel-contact-item .pixel-icon {
+        font-size: 6px;
+        margin-right: 2px;
+        min-width: 16px;
     }
     
     .pixel-skill-tag {
