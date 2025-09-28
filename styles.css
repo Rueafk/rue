@@ -111,8 +111,8 @@
 body {
     font-family: 'Press Start 2P', monospace;
     line-height: 1.6;
-    color: #3b82f6;
-    background: #0f172a;
+    color: #d4d4d4;
+    background: #1e1e1e;
     min-height: 100vh;
     overflow-x: hidden;
     image-rendering: pixelated;
@@ -123,11 +123,11 @@ body {
 .pixel-container {
     max-width: 1200px;
     margin: 2rem auto;
-    background: #1e293b;
-    border: 4px solid #3b82f6;
+    background: #2d2d30;
+    border: 4px solid #007acc;
     box-shadow: 
-        0 0 30px rgba(59, 130, 246, 0.3),
-        inset 0 0 30px rgba(59, 130, 246, 0.05);
+        0 0 30px rgba(0, 122, 204, 0.3),
+        inset 0 0 30px rgba(0, 122, 204, 0.05);
     position: relative;
     image-rendering: pixelated;
 }
@@ -139,17 +139,17 @@ body {
     left: -2px;
     right: -2px;
     bottom: -2px;
-    background: linear-gradient(45deg, #3b82f6, #06b6d4, #8b5cf6, #10b981, #3b82f6);
+    background: linear-gradient(45deg, #007acc, #4fc1ff, #9cdcfe, #569cd6, #007acc);
     z-index: -1;
 }
 
 /* Pixel Header Styles */
 .pixel-header {
-    background: linear-gradient(135deg, #1e293b 0%, #334155 100%);
-    color: #3b82f6;
+    background: linear-gradient(135deg, #2d2d30 0%, #3c3c3c 100%);
+    color: #d4d4d4;
     padding: 40px;
     position: relative;
-    border-bottom: 4px solid #3b82f6;
+    border-bottom: 4px solid #007acc;
 }
 
 .pixel-header-frame {
@@ -204,23 +204,23 @@ body {
     font-size: 32px;
     font-weight: normal;
     margin-bottom: 15px;
-    color: #3b82f6;
+    color: #569cd6;
     text-shadow: 3px 3px 0px #000000;
     letter-spacing: 2px;
 }
 
 .pixel-title-frame {
-    border: 2px solid #3b82f6;
-    background: #1e293b;
+    border: 2px solid #007acc;
+    background: #2d2d30;
     padding: 10px;
     margin-bottom: 15px;
-    box-shadow: inset 0 0 10px rgba(59, 130, 246, 0.1);
+    box-shadow: inset 0 0 10px rgba(0, 122, 204, 0.1);
 }
 
 .pixel-title {
     font-size: 14px;
     font-weight: normal;
-    color: #06b6d4;
+    color: #4fc1ff;
     text-shadow: 2px 2px 0px #000000;
     line-height: 1.4;
 }
@@ -233,27 +233,27 @@ body {
 
 .pixel-stat {
     font-size: 12px;
-    color: #10b981;
+    color: #4ec9b0;
     text-shadow: 1px 1px 0px #000000;
 }
 
 .pixel-contact-panel {
-    background: #1e293b;
-    border: 4px solid #3b82f6;
+    background: #2d2d30;
+    border: 4px solid #007acc;
     padding: 20px;
     min-width: 300px;
     box-shadow: 
-        0 0 20px rgba(59, 130, 246, 0.3),
-        inset 0 0 20px rgba(59, 130, 246, 0.05);
+        0 0 20px rgba(0, 122, 204, 0.3),
+        inset 0 0 20px rgba(0, 122, 204, 0.05);
 }
 
 .pixel-panel-title {
     font-size: 14px;
-    color: #3b82f6;
+    color: #569cd6;
     text-align: center;
     margin-bottom: 15px;
     text-shadow: 2px 2px 0px #000000;
-    border-bottom: 2px solid #3b82f6;
+    border-bottom: 2px solid #007acc;
     padding-bottom: 10px;
 }
 
@@ -269,21 +269,21 @@ body {
     gap: 10px;
     font-size: 12px;
     padding: 8px;
-    background: rgba(59, 130, 246, 0.1);
-    border: 1px solid #3b82f6;
+    background: rgba(0, 122, 204, 0.1);
+    border: 1px solid #007acc;
     transition: all 0.3s ease;
     cursor: pointer;
 }
 
 .pixel-contact-item:hover {
-    background: rgba(59, 130, 246, 0.2);
-    box-shadow: 0 0 10px rgba(59, 130, 246, 0.5);
+    background: rgba(0, 122, 204, 0.2);
+    box-shadow: 0 0 10px rgba(0, 122, 204, 0.5);
     transform: translateX(5px);
     font-size: 16px;
 }
 
 .pixel-icon {
-    color: #06b6d4;
+    color: #4fc1ff;
     font-weight: bold;
     min-width: 30px;
 }
@@ -291,7 +291,7 @@ body {
 /* Pixel Section Styles */
 .pixel-section {
     padding: 30px;
-    border-bottom: 2px solid #3b82f6;
+    border-bottom: 2px solid #007acc;
     position: relative;
 }
 
@@ -300,10 +300,10 @@ body {
 }
 
 .pixel-section-frame {
-    background: #1e293b;
-    border: 2px solid #3b82f6;
+    background: #2d2d30;
+    border: 2px solid #007acc;
     padding: 20px;
-    box-shadow: inset 0 0 20px rgba(59, 130, 246, 0.05);
+    box-shadow: inset 0 0 20px rgba(0, 122, 204, 0.05);
 }
 
 .pixel-section-header {
@@ -312,17 +312,17 @@ body {
 
 .pixel-section-title {
     font-size: 16px;
-    color: #3b82f6;
+    color: #569cd6;
     text-shadow: 2px 2px 0px #000000;
-    border-bottom: 2px solid #3b82f6;
+    border-bottom: 2px solid #007acc;
     padding-bottom: 10px;
     display: inline-block;
 }
 
 /* Pixel Summary Styles */
 .pixel-summary-box {
-    background: rgba(59, 130, 246, 0.05);
-    border: 1px solid #3b82f6;
+    background: rgba(0, 122, 204, 0.05);
+    border: 1px solid #007acc;
     padding: 20px;
 }
 
