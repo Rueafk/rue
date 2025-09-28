@@ -154,7 +154,7 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // Pixel-style experience item hover effects
     function addPixelExperienceEffects() {
-        const experienceItems = document.querySelectorAll('.pixel-experience-item, .pixel-project-item, .pixel-certification-item, .pixel-community-item');
+        const experienceItems = document.querySelectorAll('.pixel-experience-item, .pixel-project-item, .pixel-certification-item, .pixel-community-item, .pixel-service-item');
         experienceItems.forEach(item => {
             item.addEventListener('mouseenter', function() {
                 this.style.transform = 'translateY(-5px)';
